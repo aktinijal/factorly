@@ -109,7 +109,7 @@
         padding-top: 95px;
         /*        padding-bottom: 370px;*/
     }
-    button.request {
+    button.request, #modal_form button[type="submit"] {
         margin-top: 40px;
         width: 175px;
         height: 75px;

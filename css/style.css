@@ -97,7 +97,7 @@
     height: 100%;
     background: #d2dfe8;
     opacity: 0;
-    z-index: 5;
+    z-index: 21;
 }
 
 #modal_close {
@@ -183,7 +183,7 @@
 }
 
 #overlay {
-    z-index: 3;
+    z-index: 20;
     position: fixed;
     background-color: #000;
     opacity: 0.8;
