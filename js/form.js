@@ -47,7 +47,7 @@ $(document).ready(function(){
         var inputs = form.find('input'),
             valid = true;
 
-        inputs.tooltip('destroy');
+//        inputs.tooltip('destroy');
 
         $.each(inputs, function(index, val) {
         var input = $(val),
@@ -59,11 +59,11 @@ $(document).ready(function(){
 
         if(val.length === 0){
 //            formGroup.addClass('has-error').removeClass('has-success');
-            input.tooltip({
-                trigger: 'manual',
-                placement: 'right',
-                title: textError
-            }).tooltip('show');
+//            input.tooltip({
+//                trigger: 'manual',
+//                placement: 'right',
+//                title: textError
+//            }).tooltip('show');
             valid = false;
         }else{
 //            formGroup.addClass('has-success').removeClass('has-error');
@@ -75,7 +75,7 @@ $(document).ready(function(){
 
     removeError: function() {
 //        $(this).tooltip('destroy').parents('.form-group').removeClass('has-error');
-        $(this).tooltip('destroy');
+//        $(this).tooltip('destroy');
     }
 
     }
