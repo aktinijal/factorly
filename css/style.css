@@ -1,0 +1,945 @@
+@font-face {
+    font-family: LarsseitBold;
+    src: url('fonts/LarsseitBold.otf');
+}
+
+@font-face {
+    font-family: LarsseitItalic;
+    src: url('fonts/LarsseitItalic.otf');
+}
+
+@font-face {
+    font-family: LarsseitMedium;
+    src: url('fonts/LarsseitMedium.otf');
+}
+
+@font-face {
+    font-family: LarsseitRegular;
+    src: url('fonts/LarsseitRegular.otf');
+}
+
+@font-face {
+    font-family: CaslonGraphiqueEF;
+    src: url('fonts/CaslonGraphiqueEF.ttf');
+}
+
+@font-face {
+    font-family: GTHaptikMedium;
+    src: url('fonts/GTHaptikMedium.otf');
+}
+
+
+/***************************BACKGROUND*****************/
+
+.tempor {
+    position: absolute;
+    top: 0;
+    width: 100%;
+/*    height: 4892px;*/
+    z-index: -1;
+    overflow: hidden;
+}
+
+.first-triangle {
+    position: absolute;
+    top: -2500px;
+    width: 100%;
+    height: 1871px;
+    background: url(../img/background-topfirst2880.png) no-repeat top right;
+}
+
+.second-triangle {
+    position: absolute;
+    top: 2500px;
+    width: 100%;
+    height: 6915px;
+    background: url(../img/background-topsecond2880.png) no-repeat bottom right;
+}
+
+.footer-bg {
+    position: absolute;
+    bottom: 0;
+    height: 1744px;
+    width: 100%;
+    background: url(../img/footer2880.1.png) no-repeat;
+    background-color: #cfdee8;
+    z-index: -2;
+    zoom: 1;
+}
+
+.footer-bg2 {
+    position: absolute;
+    bottom: 0;
+    height: 1744px;
+    width: 100%;
+    background: url(../img/footer2880.2.png) no-repeat;
+    background-color: #cfdee8;
+    z-index: -1;
+    zoom: 1;
+    opacity: 0;
+}
+
+
+/*************************MODAL*************************/
+.bootstrap-datetimepicker-widget {
+    width: 550px;
+}
+.dropdown-menu {
+    font-size: 100%;
+}
+#modal_form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 170px 50px 50px 170px;
+    width: 100%;
+    height: 100%;
+    background: #d2dfe8;
+    opacity: 0;
+    z-index: 5;
+}
+
+#modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: block;
+    background: url(../img/close.png) no-repeat;
+    background-size: 100%;
+}
+
+#modal_form .row {
+    font-family: LarsseitMedium;
+    font-size: 144.4%;
+    margin-top: 40px;
+}
+
+#modal_form .row:first-child {
+    margin-top: 0;
+}
+
+#modal_form input,
+#modal_form select {
+    background-color: transparent;
+    border: none;
+    font-size: 100%;
+    line-height: 184.6%;
+    padding: 0 0 0 10px;
+    border-bottom: 2px solid #111111;
+}
+
+#modal_form input[name="phone"],
+#modal_form input[name="date"],
+#modal_form select,
+#modal_form input[name="message"] {
+    font-family: LarsseitMedium;
+    font-size: 100%;
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+#datetimepicker1 {
+    display: inline-block;
+}
+
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
+    display: inline-block;
+    margin-left: -305px;
+    margin-bottom: -15px;
+    height: 63px;
+    width: 305px;
+    cursor: pointer;
+}
+
+#modal_form select {
+    width: 500px;
+}
+
+#modal_form input[name="message"] {
+    width: 450px;
+}
+
+#modal_form button[type="submit"] {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    width: 280px;
+    height: 120px;
+    background-color: #111111;
+    color: #ffffff;
+    font: 88.89%/375% LarsseitMedium;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    -webkit-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+    -moz-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+    box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+}
+
+#overlay {
+    z-index: 3;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*******************Phone***************************/
+
+.phone-wrapper {
+    position: relative;
+    top: 250px;
+    height: auto;
+    width: 40%;
+    left: 60%;
+}
+.phone {
+    position: absolute;
+    right: 0;
+    top: -1000px;
+    max-width: 100%;
+}
+
+.phone-shadow,
+.phone-shadow2,
+.phone-shadow3,
+.phone-shadow4 {
+    position: absolute;
+    right: 0;
+    top: -1050px;
+    max-width: 100%;
+}
+
+.watch-wrapper {
+    position: relative;
+    top: 550px;
+    height: auto;
+    width: 40%;
+    left: 50%;
+}
+.watch {
+    position: absolute;
+    right: 50px;
+    top: -1500px;
+    max-width: 100%;
+}
+
+.watch2 {
+    position: absolute;
+    right: 4000px;
+    top: 60px;
+    max-width: 100%;
+}
+
+.watch3 {
+    position: absolute;
+    right: 4000px;
+    top: 60px;
+    max-width: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+
+/***************************************/
+
+.row-custom {
+    width: 71.78%;
+    margin: 0 auto;
+}
+
+.sectionoffset {
+    width: 7.5%;
+    margin-left: 7.5%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    /*    height: 100%;*/
+    background-color: #fff;
+    font-size: 36px;
+}
+
+p {
+    color: #111111;
+    font: 100%/178% LarsseitMedium;
+}
+
+h1.title {
+    margin-bottom: 70px;
+    color: #1f2124;
+    font: 267%/125% LarsseitMedium;
+}
+
+h2 {
+    margin-bottom: 50px;
+    color: #111111;
+    font: 200%/122% LarsseitMedium;
+}
+
+.home {
+    opacity: 0;
+}
+
+.header {
+    height: 220px;
+    padding: 80px 90px;
+}
+
+.logo img:last-child {
+    margin-left: 25px;
+    vertical-align: super;
+}
+
+.navigation li,
+.social li,
+.copyright p {
+    margin-right: 50px;
+    display: inline-block;
+    height: 64px;
+}
+
+.navigation li:last-child,
+.social li:last-child {
+    margin-right: 0;
+}
+
+.navigation a,
+.social a {
+    text-decoration: none;
+    color: #111111;
+    font: 32px/60px LarsseitMedium;
+}
+
+.navigation a:hover,
+.active {
+    background: url(../img/navactive.png) no-repeat center;
+}
+
+
+/***********************HERO***************/
+
+.hero {
+    position: relative;
+    padding-top: 140px;
+}
+
+.hero p {
+    color: #1f2124;
+}
+
+.hero .iphone-img {
+    width: 100%;
+}
+
+button.request {
+    margin-top: 80px;
+    text-decoration: none;
+    width: 280px;
+    height: 120px;
+    background-color: #111111;
+    color: #ffffff;
+    font: 88.89%/375% LarsseitMedium;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+    -moz-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+    box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.4);
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    right: 49%;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+/*******************EXPERTIZE*********************/
+
+h4.sectionName {
+    width: 252px;
+    position: relative;
+    top: 330px;
+    left: 42px;
+    color: #fd3b3b;
+    font: 100% LarsseitMedium;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.sectionName img {
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.expertize {
+    position: relative;
+    margin-top: 385px;
+    margin-bottom: 380px;
+}
+
+.back {
+    position: absolute;
+    width: 60%;
+    z-index: 0;
+}
+
+.back h1 {
+    color: #fff;
+    /*    font: 172px/180px CaslonGraphiqueEF;*/
+    font: 478%/105% CaslonGraphiqueEF;
+}
+
+a.learn {
+    position: absolute;
+    bottom: 0;
+}
+
+.learn p {
+    margin-bottom: 0;
+}
+
+.learn span {
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 5px solid #111;
+}
+
+.expertize p {
+    margin-bottom: 50px;
+}
+
+.expertize .learn p {
+    margin-bottom: 0;
+}
+
+.expertize li {
+    color: #111111;
+    font: 111%/260% LarsseitMedium;
+}
+
+.expertize li img {
+    margin-right: 37px;
+    vertical-align: middle;
+}
+
+
+/**********************Cases**************************/
+.case-wrapper{
+    position: relative;
+}
+
+.slick-img-wrap img{
+    position: relative;
+}
+
+.slick-img-wrap a{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 20px;
+    font-size: 100%;
+    color: #111111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.slick-prev {
+    right: 44px;
+    bottom: -108px;
+    background: url('../img/customers-left.png') no-repeat;
+    background-size: 100%;
+}
+
+.slick-next {
+    right: 20px;
+    bottom: -148px;
+    background: url('../img/customers-right.png') no-repeat;
+    background-size: 100%;
+}
+
+.case {
+    position: relative;
+    margin-bottom: 520px;
+}
+
+.case .sectionName {
+    top: 200px;
+}
+
+.case .learn {
+    position: absolute;
+    left: 20px;
+    bottom: -136px;
+}
+
+.pagingInfoBlock {
+    position: absolute;
+    right: 205px;
+    bottom: -136px;
+}
+/************************Principle******************/
+.principle{
+    position: relative;
+}
+
+/********************Call to action*******************/
+.action button.request {
+    margin-bottom: 75px;
+}
+
+/**********************Footer***********************/
+
+footer {
+    height: 200px;
+    padding: 50px 90px;
+}
+
+
+/*********************ABOUT*******************/
+
+.about {
+    background: #f0f0f0 url(../img/about/background.png) no-repeat top center;
+}
+
+.faces {
+    padding-top: 200px;
+}
+
+.faces h4.sectionName {
+    top: 200px;
+}
+
+.zoom-face p {
+    opacity: 0;
+    margin-top: 100px;
+    color: #d2dfe8;
+    font: 97.2%/205.7% LarsseitMedium;
+}
+
+.face {
+    z-index: 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 800px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
+    -moz-box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
+    box-shadow: 0px 30px 60px 0px rgba(17, 17, 17, 0.2);
+}
+
+.face img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.faces .text {
+    position: absolute;
+    left: 65px;
+    top: -35px;
+    z-index: 1;
+}
+
+.faces h3 {
+    color: #111;
+    font: 155.5%/114.3% LarsseitMedium;
+}
+
+.faces .text h4 {
+    margin-top: 10px;
+    color: #d2dfe8;
+    font: 97.2%/205.7% LarsseitMedium;
+}
+
+div.plus {
+    margin-top: 105px;
+    padding-top: 40px;
+    padding-left: 40px;
+    background: url(../img/about/plus.png) no-repeat;
+}
+
+.plus p {
+    font: 155.5%/128.6% LarsseitMedium;
+}
+
+.factorly{
+    position: absolute;
+    right: 505px;
+}
+
+.why {
+    margin-bottom: 330px;
+    padding-top: 540px;
+}
+
+.ambiance h4.sectionName {
+    top: 170px;
+}
+
+.ambianceSmall img,
+.ambianceBig img {
+    width: 100%;
+}
+
+div.ambianceSmall:first-child,
+.ambianceSmall:nth-child(2),
+.third {
+    margin-bottom: 15px;
+}
+.ambianceBig {
+    margin-bottom: 22px;
+}
+.third,
+.fourth,
+.fifth {
+    margin-top: 15px;
+}
+
+.ambiance .back {
+    width: auto;
+    bottom: 165px;
+}
+
+.learn span {
+    display: inline-block;
+    height: 90px;
+    border-bottom: 3px solid #111;
+}
+
+.instagram-back,
+.back img {
+    position: absolute;
+    bottom: 0;
+}
+
+.action {
+    margin-top: 600px;
+}
+
+
+/*********************Case.html********************/
+.cases .logo img{
+    float: left;
+}
+.cases .logo img:last-child {
+    margin-top: 20px;
+}
+.case1 {
+    background: #f0f0f0 url(../img/cases/background.png) no-repeat top center;
+}
+
+.case2 {
+    background: #cfdee8;
+}
+
+.case3 {
+    background: #f2dcdc;
+}
+
+.case4 {
+    background: #cfdee8;
+}
+
+.case5 {
+    background: #dcd9ee;
+}
+
+.case6 {
+    background: #cfdee8;
+}
+
+.case7 {
+    background: #f2dcdc;
+}
+
+.case8 {
+    background: #cfdee8;
+}
+
+.pagingInfoBlock.casesPaging {
+    position: absolute;
+/*    right: 740px;*/
+    top: 1370px;
+    bottom: auto;
+    z-index: 3;
+}
+
+.sliderBig.slick-prev,
+.sliderBig.slick-next {
+    position: absolute;
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.sliderBig.slick-prev {
+    top: 1385px;
+    right: 575px;
+    background: url('../img/customers-left.png') no-repeat;
+    background-size: 100%;
+    z-index: 3;
+}
+
+.sliderBig.slick-next {
+    top: 1420px;
+    right: 530px;
+    background: url('../img/customers-right.png') no-repeat;
+    background-size: 100%;
+}
+
+.pagingInfoBlock.casesPagingRed {
+    bottom: 575px;
+    top: auto;
+}
+
+.pagingInfoBlock.casesPagingRed .pagingInfo {
+    color: #fd3b3b;
+}
+
+.slick-prev.red,
+.slick-next.red {
+    position: absolute;
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.cases-slick .slick-prev.red {
+    bottom: 590px;
+    right: 575px;
+    top: auto;
+    background: url('../img/cases/arrow-left.png') no-repeat;
+    background-size: 100%;
+    z-index: 3;
+}
+
+.cases-slick .slick-next.red {
+    bottom: 550px;
+    right: 530px;
+    top: auto;
+    background: url('../img/cases/arrow-right.png') no-repeat;
+    background-size: 100%;
+    z-index: 3;
+}
+
+.cases .case {
+    margin-top: 90px;
+}
+
+.screens {
+    margin-bottom: 325px;
+}
+
+.projects-text {
+    margin-top: 125px;
+    margin-bottom: 335px;
+    font: 100%/177.7% LarsseitRegular;
+}
+
+.project-screen {
+    position: relative;
+    width: 27.66%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 1;
+}
+.projects-screen a{
+    display: block;
+    z-index: 2;
+    position: absolute;
+}
+.mfp-bottom-bar {
+    display: none;
+}
+
+.project-screen:first-child {
+    margin-left: 0;
+}
+
+.project-screen:last-child {
+    margin-right: 5.6%;
+}
+
+.project-screen img {
+    width: 100%;
+}
+
+.basilic {
+    position: absolute;
+    top: -80px;
+    right: -140px;
+}
+
+.tomato {
+    position: absolute;
+    top: 175px;
+    right: -160px;
+}
+.together {
+    width: 25%;
+}
+.google {
+    margin-bottom: 50px;
+}
+.google img, .apple img{
+    width: 80%;
+}
+
+.back-buttons {
+    width: 12.75%;
+    position: absolute;
+    right: -75px;
+    bottom: 0;
+}
+
+.product-details ul li {
+    list-style: none;
+    font: 111%/210% LarsseitMedium;
+}
+
+.product-details p {
+    font-family: LarsseitRegular;
+}
+
+.quote {
+    background: url(../img/cases/quote.png) no-repeat;
+    position: relative;
+    margin-top: 120px;
+}
+
+.quote img {
+    position: absolute;
+    top: -85px;
+    left: -200px;
+    z-index: -1;
+}
+
+.quote p {
+    font-family: LarsseitItalic;
+}
+
+h4.name {
+    margin-top: 82px;
+    font: 111%/120% LarsseitMedium;
+}
+
+h5.position {
+    font: 88.9%/150% LarsseitRegular;
+}
+
+.cases footer {
+    text-align: center;
+/*    margin-top: 520px;*/
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+}
+.footer-empty{
+    width: 10%;
+    height: 200px;
+    margin-top: 520px;
+}
+footer .request {
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    font-size: 28px;
+}
+
+.cases .copyright p,
+.cases .social a {
+    height: 80px;
+    line-height: 80px;
+}
+
+
+/*******Contact********/
+
+.contact {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    height: 100%;
+    background: url(../img/contact/background.png) no-repeat center center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contacts {
+    position: absolute;
+    width: 100%;
+    bottom: 200px;
+    top: 125px;
+/*    padding-top: 275px;*/
+}
+
+.contacts img {
+    margin-bottom: 90px;
+}
+
+.contacts p {
+    margin-bottom: 45px;
+}
+
+.contacts .request {
+    margin-top: 45px;
+    /*    margin-top: 0;*/
+}
+
+.contact footer {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    padding: 50px 90px;
+}

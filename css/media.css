@@ -1,0 +1,362 @@
+@media (max-width: 2500px) {
+    .watch-wrapper {
+        top: 490px;
+        left: 66%;
+    }
+}
+
+@media (max-width: 1920px) {
+    body {
+        font-size: 23px;
+    }
+    .first-triangle {
+        position: absolute;
+        top: -1500px;
+        width: 100%;
+        height: 1234px;
+        background: url(../img/background-topfirst1900.png) no-repeat top right;
+    }
+    .second-triangle {
+        position: absolute;
+        top: 1500px;
+        width: 100%;
+        height: 4642px;
+        background: url(../img/background-topsecond1900.png) no-repeat bottom right;
+    }
+    .footer-bg {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer1900.1.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -2;
+        zoom: 1;
+    }
+    .footer-bg2 {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer1900.2.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -1;
+        zoom: 1;
+        opacity: 0;
+    }
+    /***********************MODAL*************/
+    #modal_form submit {
+        width: 175px;
+        height: 75px;
+    }
+    /********************************************/
+    .phone-wrapper {
+        position: relative;
+        top: 3%;
+        right: 10%;
+        height: 427px;
+    }
+    .phone {
+        top: -1000px;
+    }
+    .phone-shadow,
+    .phone-shadow2,
+    .phone-shadow3,
+    .phone-shadow4 {
+        top: -1050px;
+    }
+    .watch-wrapper {
+        width: 25%;
+        top: -200px;
+        left: 66%;
+    }
+    h1.title {
+        margin-bottom: 40px;
+    }
+    h2 {
+        margin-top: 65px;
+        margin-bottom: 30px;
+    }
+    .header {
+        height: 125px;
+        padding: 45px 65px;
+    }
+    .logo img:first-child {
+        width: 36px;
+        height: 36px;
+    }
+    .logo img:last-child {
+        margin-left: 15px;
+        width: 100px;
+        height: 23px;
+    }
+    .navigation li,
+    .social li,
+    .copyright p {
+        margin-right: 30px;
+        height: 35px;
+    }
+    .navigation a,
+    .social a {
+        font: 20px/35px LarsseitMedium;
+    }
+    .navigation a:hover,
+    .active {
+        background: url(../img/navactive1680.png) no-repeat center;
+    }
+    /**********************HERO**********************/
+    .hero {
+        padding-top: 95px;
+        /*        padding-bottom: 370px;*/
+    }
+    button.request {
+        margin-top: 40px;
+        width: 175px;
+        height: 75px;
+        font: 20px/35px LarsseitMedium;
+    }
+    /**********************EXPERTIZE**********************/
+    h4.sectionName {
+        width: 157px;
+        top: 200px;
+        font-size: 23px;
+    }
+    .sectionName img {
+        width: 35px;
+        margin-right: 20px;
+    }
+    .expertize {
+        margin-top: 185px;
+        margin-bottom: 240px;
+    }
+    .back h1 {}
+    .learn span {
+        height: 60px;
+        line-height: 60px;
+        border-width: 2px;
+    }
+    .expertize p {
+        margin-bottom: 40px;
+    }
+    .expertize li {}
+    .expertize li img {
+        width: 35px;
+        margin-right: 20px;
+    }
+    /**********************CASE**********************/
+    .slick-prev,
+    .slick-next {
+        width: 53px;
+        height: 25px;
+    }
+    .slick-prev {
+        right: 44px;
+        bottom: -66px;
+        background: url('../img/customers-left1680.png') no-repeat;
+    }
+    .slick-next {
+        right: 12px;
+        bottom: -91px;
+        background: url('../img/customers-right1680.png') no-repeat;
+    }
+    .case {
+        margin-bottom: 300px;
+    }
+    .case .sectionName {
+        top: 150px;
+    }
+    .case .learn {
+        left: 10px;
+        bottom: -90px;
+    }
+    .pagingInfoBlock {
+        right: 135px;
+        bottom: -90px;
+    }
+    .action {
+        margin-top: 350px;
+    }
+    .cases footer {
+        height: 180px;
+        padding: 50px 65px;
+    }
+    footer,
+    .contact footer {
+        height: 135px;
+    }
+    footer .request {
+        margin-top: 0;
+    }
+    .copyright p {
+        /*        font: 18px/35px LarsseitMedium;*/
+    }
+    /**************************CASE******************/
+    .cases .back {
+        top: 0px;
+    }
+    .screens {
+        margin-bottom: 125px;
+    }
+    .projects-text {
+        margin-top: 65px;
+        margin-bottom: 135px;
+    }
+    h4.name {
+        margin-top: 62px;
+    }
+    h5.position {}
+    .cases footer {
+        margin-top: 320px;
+    }
+    .sliderBig.slick-prev,
+    .sliderBig.slick-next,
+    .cases-slick .slick-prev.red,
+    .cases-slick .slick-next.red {
+        height: 25px;
+        background-size: 75%;
+    }
+    /**************************about.html******************/
+    .faces h4.sectionName {
+        top: 120px;
+    }
+    .faces .text {
+        top: -20px;
+    }
+    .face {
+        height: 500px;
+    }
+    .zoom-face p {
+        margin-top: 100px;
+    }
+    .faces .text h4 {
+        margin-top: 10px;
+    }
+    div.plus {
+        margin-top: 85px;
+        padding-left: 50px;
+        background-size: 25%;
+    }
+    .factorly {
+        width: 25%;
+        right: 0;
+        top: 850px;
+    }
+    .why {
+        margin-bottom: 230px;
+        padding-top: 200px;
+    }
+    .ambiance h4.sectionName {
+        width: 160px;
+    }
+    .contacts {
+        padding-top: 25px;
+    }
+    .contacts img {
+        margin-bottom: 40px;
+    }
+    .contacts p {
+        margin-bottom: 15px;
+    }
+    .contacts .request {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .first-triangle {
+        position: absolute;
+        top: -1500px;
+        width: 100%;
+        height: 1051px;
+        background: url(../img/background-topfirst1680.png) no-repeat top right;
+    }
+    .second-triangle {
+        position: absolute;
+        top: 1500px;
+        width: 100%;
+        height: 4642px;
+        background: url(../img/background-topsecond16802.png) no-repeat bottom right;
+    }
+    .footer-bg {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer1.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -2;
+        zoom: 1;
+    }
+    .footer-bg2 {
+        position: absolute;
+        bottom: 0;
+        height: 1085px;
+        width: 100%;
+        background: url(../img/footer2.png) no-repeat;
+        background-color: #cfdee8;
+        z-index: -1;
+        zoom: 1;
+        opacity: 0;
+    }
+    /**************contact.html**************/
+    .contacts img {    
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .contacts .request {
+        margin-top: 10px;
+    }
+    .contact footer {
+        height: 95px;
+    }
+    .contact footer {
+        height: 95px;
+        padding: 30px 90px;
+    }
+}
+
+@media (max-width: 1366px) {
+    body {
+        font-size: 18px;
+    }
+    .hero {
+        padding-top: 15px;
+    }
+    .expertize p {
+        margin-bottom: 40px;
+    }
+    .principle h2 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    /**************about.html***************/
+    .faces {
+        padding-top: 75px;
+    }
+    .face {
+        height: 380px;
+    }
+    .faces .text {
+        left: 35px;
+    }
+    div.plus {
+        margin-top: 35px;
+        padding-top: 20px;
+        padding-left: 25px;
+        background-size: 15%;
+    }
+    .factorly {
+        top: 590px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /**************about.html***************/
+}
+
+@media (max-width: 768px) {
+    /**************about.html***************/
+    .zoom-face {
+        margin-bottom: 30px;
+    }
+}
