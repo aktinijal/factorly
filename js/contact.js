@@ -12,7 +12,7 @@ $(document).ready(function () {
     /******************Clock************/
     //    (function () {
     //        // Initialise the locale-enabled clocks
-//            initInternationalClocks();
+    //            initInternationalClocks();
     //        // Initialise any local time clocks
     initLocalClocks();
     //        // Start the seconds container moving
@@ -20,37 +20,37 @@ $(document).ready(function () {
     //        // Set the intial minute hand container transition, and then each subsequent step
     setUpMinuteHands();
     //    })();
-function getTimes() {
-  moment.tz.add([
+    function getTimes() {
+        moment.tz.add([
     '1 EU CE%sT',
     'Eire|GMT IST|0 -10|01010101010101010101010|1BWp0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00'
     ]);
-  var now = new Date();
-  // Set the time manually for each of the clock types we're using
-  var times = [{
-      jsclass: 'js-tokyo',
-      jstime: moment.tz(now, "Europe/Paris")
+        var now = new Date();
+        // Set the time manually for each of the clock types we're using
+        var times = [{
+                jsclass: 'js-tokyo',
+                jstime: moment.tz(now, "Europe/Paris")
     },
-    {
-      jsclass: 'js-london',
-      jstime: moment.tz(now, "Eire")
+            {
+                jsclass: 'js-london',
+                jstime: moment.tz(now, "Eire")
     }
   ];
-  return times;
-}
+        return times;
+    }
 
-    
+
     function initLocalClocks() {
         var times = getTimes();
         // Get the local time using JS
-//        var date = new Date;
-//        var seconds = date.getSeconds();
-//        var minutes = date.getMinutes();
-//        var hours = date.getHours();
-        alert(times[1].jstime);
-    var hours = times[1].jstime.format('h');
-    var minutes = times[1].jstime.format('mm');
-    var seconds = times[1].jstime.format('ss');
+        //        var date = new Date;
+        //        var seconds = date.getSeconds();
+        //        var minutes = date.getMinutes();
+        //        var hours = date.getHours();
+//        alert(times[1].jstime);
+        var hours = times[1].jstime.format('h');
+        var minutes = times[1].jstime.format('mm');
+        var seconds = times[1].jstime.format('ss');
 
 
         // Create an object with each hand and it's angle in degrees
@@ -108,24 +108,24 @@ function getTimes() {
 
 
     /*Do the first minute's rotation*/
-function moveMinuteHands(containers) {
-  for (var i = 0; i < containers.length; i++) {
-    containers[i].style.webkitTransform = 'rotateZ(6deg)';
-    containers[i].style.transform = 'rotateZ(6deg)';
-  }
-  // Then continue with a 60 second interval
-  setInterval(function() {
-    for (var i = 0; i < containers.length; i++) {
-      if (containers[i].angle === undefined) {
-        containers[i].angle = 12;
-      } else {
-        containers[i].angle += 6;
-      }
-      containers[i].style.webkitTransform = 'rotateZ('+ containers[i].angle +'deg)';
-      containers[i].style.transform = 'rotateZ('+ containers[i].angle +'deg)';
+    function moveMinuteHands(containers) {
+        for (var i = 0; i < containers.length; i++) {
+            containers[i].style.webkitTransform = 'rotateZ(6deg)';
+            containers[i].style.transform = 'rotateZ(6deg)';
+        }
+        // Then continue with a 60 second interval
+        setInterval(function () {
+            for (var i = 0; i < containers.length; i++) {
+                if (containers[i].angle === undefined) {
+                    containers[i].angle = 12;
+                } else {
+                    containers[i].angle += 6;
+                }
+                containers[i].style.webkitTransform = 'rotateZ(' + containers[i].angle + 'deg)';
+                containers[i].style.transform = 'rotateZ(' + containers[i].angle + 'deg)';
+            }
+        }, 60000);
     }
-  }, 60000);
-}
 
     /*Move the second containers*/
     function moveSecondHands() {
