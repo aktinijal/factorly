@@ -199,13 +199,41 @@ $(document).ready(function () {
     });
     $slickElementHome.slick({});
     
-//    $('').onclick( function () {
-//        console.log('uih');
-//        var slideIndex = 3;
-//        $slickElement.slick('slickGoTo', parseInt(slideIndex));
-////        e.preventDefault();
-//    });
 
+    function test (number) {
+            var slideIndex = number - 1;
+            var $slickElement = $('.cases-slick');
+            $slickElement.slick('slickGoTo', parseInt(slideIndex));
+    }
+    
+    if (window.location.hash === '#1') {
+        test(1);
+    }
+    if (window.location.hash === '#2') {
+        test(2);
+    }
+    if (window.location.hash === '#3') {
+        test(3);
+    }
+    if (window.location.hash === '#4') {
+        test(4);
+    }
+    if (window.location.hash === '#5') {
+        test(5);
+    }
+    if (window.location.hash === '#6') {
+        test(6);
+    }
+    if (window.location.hash === '#7') {
+        test(7);
+    }
+    if (window.location.hash === '#8') {
+        test(8);
+    }
+    
+    
+    
+    /******************Cases POPUP**************/
     $(document).ready(function () {
         $('.popup-gallery').magnificPopup({
             delegate: 'a',

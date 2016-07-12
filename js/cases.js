@@ -21,10 +21,10 @@ $(document).ready(function () {
             var margTop = 0;
             var slickNextTop = 60;
         } 
-//        if(width > 1920){
-//            var margTop = 65;
-//            var slickNextTop = 75;
-//        } 
+        if(width > 1920){
+            var margTop = 65;
+            var slickNextTop = 75;
+        } 
         $('.sliderBig.slick-prev').css({
             'top': slickImgOffset.top + $('.slickBig-img').height() + margTop + 35 + 'px'
         });
@@ -38,17 +38,18 @@ $(document).ready(function () {
         
         
         
-        var productOffset = $('.project').offset();
-        var projectHei = $('.project').css('height');
+        var quoteOffset = $('.quote').offset();
+        var quoteHei = $('.quote').css('height');
+        quoteHei = parseInt(quoteHei, 10);
          $('.cases-slick .slick-prev.red').css({
-            'top': productOffset.top + projectHei + margTop + 35 + 'px'
+            'top': quoteOffset.top + quoteHei + margTop + 35 + 'px'
         });
         $('.pagingInfoBlock.casesPagingRed').css({
-            'top': productOffset.top + projectHei + margTop + 25 + 'px'
+            'top': quoteOffset.top + quoteHei + margTop + 25 + 'px'
         });
 
         $('.cases-slick .slick-next.red').css({
-            'top': productOffset.top + projectHei + margTop + slickNextTop + 'px'
+            'top': quoteOffset.top + quoteHei + margTop + slickNextTop + 'px'
         });
         
         

@@ -451,6 +451,13 @@ a.learn {
 
 
 /**********************Cases**************************/
+.case {
+    position: relative;
+    margin-bottom: 520px;
+}
+.home .case{
+    background-color: #cfdee8;
+}
 .case-wrapper{
     position: relative;
 }
@@ -494,11 +501,6 @@ a.learn {
     background-size: 100%;
 }
 
-.case {
-    position: relative;
-    margin-bottom: 520px;
-}
-
 .case .sectionName {
     top: 200px;
 }
@@ -516,6 +518,7 @@ a.learn {
 }
 /************************Principle******************/
 .principle{
+    background-color: #cfdee8;
     position: relative;
 }
 
