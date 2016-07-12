@@ -41,18 +41,22 @@ $(document).ready(function () {
 
 
     function initLocalClocks() {
-        var times = getTimes();
+//        var times = getTimes();
         // Get the local time using JS
         //        var date = new Date;
         //        var seconds = date.getSeconds();
         //        var minutes = date.getMinutes();
         //        var hours = date.getHours();
 //        alert(times[1].jstime);
-        var hours = times[1].jstime.format('h');
-        var minutes = times[1].jstime.format('mm');
-        var seconds = times[1].jstime.format('ss');
+        var parisTime = moment().tz("Europe/Paris");
+//        var hours = times[1].jstime.format('h');
+//        var minutes = times[1].jstime.format('mm');
+//        var seconds = times[1].jstime.format('ss');
 
-
+        var hours = parisTime.hours();
+        var minutes = parisTime.minutes();
+        var seconds = parisTime.seconds();
+        console.log(moment().tz("Europe/Paris").format());
         // Create an object with each hand and it's angle in degrees
         var hands = [
             {
