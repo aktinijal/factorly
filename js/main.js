@@ -10,7 +10,7 @@ $(document).ready(function () {
         
         $('.hero').height(height-headerHei-heroPadTop);
         $('.expertize').height(height);
-        $('.case').height(height);
+        $('.home .case').height(height);
         $('.principle').height(height);
         
         var pageHeight = $('.wrapper').height();

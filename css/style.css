@@ -662,9 +662,17 @@ div.ambianceSmall:first-child,
 .cases .logo img:last-child {
     margin-top: 20px;
 }
+/*
 .case1 {
-    background: #f0f0f0 url(../img/cases/background.png) no-repeat top center;
+    background: #dee7da url(../img/cases/background.png) no-repeat top center;
 }
+*/
+
+.case1 {
+    background: #dee7da url(../img/cases/grey.png) no-repeat bottom right;
+    background-size: contain;
+}
+
 
 .case2 {
     background: #cfdee8;
@@ -691,7 +699,7 @@ div.ambianceSmall:first-child,
 }
 
 .case8 {
-    background: #cfdee8;
+    background: #cfdee8 url(../img/cases/grey.png) no-repeat bottom right;
 }
 
 .pagingInfoBlock.casesPaging {

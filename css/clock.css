@@ -31,7 +31,6 @@
     z-index: 10;
 }
 
-
 .simple-red {
     background: #fd3b3b;
     border-radius: 50%;
@@ -127,4 +126,36 @@
     /*    transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);*/
 }
 
-@media (max-width: 1920px) {}
+@media (max-width: 1920px) {
+    .clock {
+        margin-left: -5%;
+        margin-bottom: 20px;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-size: 100%;
+    }
+    .hours {
+        top: 30%;
+        left: 49.25%;
+        width: 1.5%;
+        height: 20%;
+    }
+    .minutes {
+        top: 20%;
+        left: 49.75%;
+        width: 1.5%;
+        height: 30%;
+    }
+    .seconds {
+        height: 33%;
+        left: 49.25%;
+        top: 17%;
+    }
+    .ampm {
+        height: 20px;
+        font-size: 20px;
+        bottom: 25%;
+        left: 42%;
+    }
+}
