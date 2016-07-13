@@ -830,13 +830,13 @@ div.ambianceSmall:first-child,
 .basilic {
     position: absolute;
     top: -80px;
-    right: -140px;
+    right: -10%;
 }
 
 .tomato {
     position: absolute;
-    top: 175px;
-    right: -160px;
+    top: 25%;
+    right: -15%;
 }
 .together {
     width: 25%;
