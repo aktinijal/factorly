@@ -37,7 +37,6 @@ $(document).ready(function () {
         });
         
         
-        
         var quoteOffset = $('.quote').offset();
         var quoteHei = $('.quote').css('height');
         quoteHei = parseInt(quoteHei, 10);
@@ -52,12 +51,10 @@ $(document).ready(function () {
             'top': quoteOffset.top + quoteHei + margTop + slickNextTop + 'px'
         });
         
-        
     }
     
     setArrows();
     $(window).resize(setArrows);
-    
     
     function setCaseHei() {
         var slickTrackHei = $('.slick-track').height();

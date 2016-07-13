@@ -10,54 +10,19 @@ $(document).ready(function () {
     $(window).resize(setContactPadding);
 
     /******************Clock************/
-    //    (function () {
-    //        // Initialise the locale-enabled clocks
-    //            initInternationalClocks();
-    //        // Initialise any local time clocks
-    initLocalClocks();
-    //        // Start the seconds container moving
-    moveSecondHands();
-    //        // Set the intial minute hand container transition, and then each subsequent step
-    setUpMinuteHands();
-    //    })();
-    function getTimes() {
-        moment.tz.add([
-    '1 EU CE%sT',
-    'Eire|GMT IST|0 -10|01010101010101010101010|1BWp0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00'
-    ]);
-        var now = new Date();
-        // Set the time manually for each of the clock types we're using
-        var times = [{
-                jsclass: 'js-tokyo',
-                jstime: moment.tz(now, "Europe/Paris")
-    },
-            {
-                jsclass: 'js-london',
-                jstime: moment.tz(now, "Eire")
-    }
-  ];
-        return times;
-    }
-
+        (function () {
+            initLocalClocks();
+            moveSecondHands();
+            setUpMinuteHands();
+        })();
 
     function initLocalClocks() {
-//        var times = getTimes();
-        // Get the local time using JS
-        //        var date = new Date;
-        //        var seconds = date.getSeconds();
-        //        var minutes = date.getMinutes();
-        //        var hours = date.getHours();
-//        alert(times[1].jstime);
         var parisTime = moment().tz("Europe/Paris");
-//        var hours = times[1].jstime.format('h');
-//        var minutes = times[1].jstime.format('mm');
-//        var seconds = times[1].jstime.format('ss');
 
         var hours = parisTime.hours();
         var minutes = parisTime.minutes();
         var seconds = parisTime.seconds();
-        console.log(moment().tz("Europe/Paris").format());
-        // Create an object with each hand and it's angle in degrees
+        
         var hands = [
             {
                 hand: 'hours',
@@ -84,8 +49,7 @@ $(document).ready(function () {
                 }
             }
         }
-
-
+        
         var ampmDiv = document.getElementById('ampm'),
             ampm = (hours >= 12) ? "PM" : "AM";
         ampmDiv.innerHTML = ampm;
@@ -93,17 +57,14 @@ $(document).ready(function () {
     };
 
 
-
     /* Set a timeout for the first minute hand movement (less than 1 minute), then rotate it every minute after that*/
     function setUpMinuteHands() {
         // More tricky, this needs to move the minute hand when the second hand hits zero
         var containers = document.querySelectorAll('.minutes-container');
         var secondAngle = containers[containers.length - 1].getAttribute('data-second-angle');
-        console.log(secondAngle);
         if (secondAngle > 0) {
             // Set a timeout until the end of the current minute, to move the hand
             var delay = (((360 - secondAngle) / 6) + 0.1) * 1000;
-            console.log(delay);
             setTimeout(function () {
                 moveMinuteHands(containers);
             }, delay);
@@ -151,10 +112,6 @@ $(document).ready(function () {
             containers[i].style.transitionDelay = '0.0' + randomOffset + 's';
         }
     }
-
-
-
-
 
 
 });
