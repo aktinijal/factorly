@@ -354,6 +354,13 @@
     /**************about.html***************/
 }
 
+@media (max-width: 992px) {
+    /**************cases.html***************/
+    .quote img {
+        width: 15%;
+    }
+}
+
 @media (max-width: 768px) {
     /**************about.html***************/
     .zoom-face {

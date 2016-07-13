@@ -50,18 +50,25 @@ $(document).ready(function () {
         $('.cases-slick .slick-next.red').css({
             'top': quoteOffset.top + quoteHei + margTop + slickNextTop + 'px'
         });
-        
     }
-    
+
     setArrows();
     $(window).resize(setArrows);
     
+    
     function setCaseHei() {
-        var slickTrackHei = $('.slick-track').height();
-        $('.cases').height(slickTrackHei);
+        var slickTrackHei = $('.case4').height();
+        $('.case1 ,  .case2, .case3, .case5, .case6, .case7, .case8').height(slickTrackHei);
     }
     
     setCaseHei();
     $(window).resize(setCaseHei);
+    
+//    setCaseHei();
+////    var self = this;
+//    $(window).resize(setTimeout(function(){
+//        setCaseHei();
+//        
+//    }, 500));
 
 });

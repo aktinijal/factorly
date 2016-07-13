@@ -665,17 +665,11 @@ div.ambianceSmall:first-child,
 .cases .logo img:last-child {
     margin-top: 20px;
 }
-/*
-.case1 {
-    background: #dee7da url(../img/cases/background.png) no-repeat top center;
-}
-*/
 
 .case1 {
     background: #dee7da url(../img/cases/grey1.png) no-repeat bottom right;
     background-size: contain;
 }
-
 
 .case2 {
     background: #cfdee8 url(../img/cases/grey2.png) no-repeat bottom right;
@@ -854,7 +848,9 @@ div.ambianceSmall:first-child,
     right: -75px;
     bottom: 0;
 }
-
+.product-details{
+    margin-bottom: 400px;
+}
 .product-details ul li {
     list-style: none;
     font: 111%/210% LarsseitMedium;
@@ -865,7 +861,6 @@ div.ambianceSmall:first-child,
 }
 
 .quote {
-/*    background: url(../img/cases/quote.png) no-repeat;*/
     position: relative;
     margin-top: 120px;
 }
@@ -892,12 +887,15 @@ h5.position {
     font: 88.9%/150% LarsseitRegular;
 }
 
-.cases footer {
-    text-align: center;
-/*    margin-top: 520px;*/
+.for-footer{
+    position: relative;
+}
+footer.cases-footer {
     position: absolute;
     bottom: 0;
-    width: 10%;
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 100%;
 }
 .footer-empty{
     width: 10%;
