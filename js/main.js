@@ -1,51 +1,98 @@
 $(document).ready(function () {
-    
-    function setSectionHeight(){
-        var height = $(window).height();
-        var heroPadTop = $('.hero').css('padding-top');
-        heroPadTop = parseInt(heroPadTop, 10);
 
-        var headerHei = $('.header').css('height');
-        headerHei = parseInt(headerHei, 10);
-        
-        $('.hero').height(height-headerHei-heroPadTop);
-        $('.expertize').height(height);
-        $('.home .case').height(height);
-        $('.principle').height(height);
-        
-        var pageHeight = $('.wrapper').height();
-        $('.tempor').height(pageHeight);
-        
+    function setSectionHeight() {
+
+            var height = $(window).height();
+            var heroPadTop = $('.hero').css('padding-top');
+            heroPadTop = parseInt(heroPadTop, 10);
+
+            var headerHei = $('.header').css('height');
+            headerHei = parseInt(headerHei, 10);
+
+            $('.hero').height(height - headerHei - heroPadTop);
+            $('.expertize').height(height);
+            $('.home .case').height(height);
+            $('.principle').height(height);
+
+            var pageHeight = $('.wrapper').height();
+            $('.tempor').height(pageHeight);
+
     }
-    
+
     setSectionHeight();
     $(window).resize(setSectionHeight);
 
-/********************Modal***************************/
+    /********************Modal***************************/
+    //    $('.request').click(function () {
+    //        $('#overlay').fadeIn(400,
+    //            function () {
+    //                $('#modal_form')
+    //                    .css('display', 'block')
+    //                    .animate({
+    //                        opacity: 1
+    //                    }, 200);
+    //            });
+    //    });
+
+    //    $('#modal_close, #overlay').click(function () {
+    //        $('#modal_form')
+    //            .animate({
+    //                    opacity: 0
+    //                }, 200,
+    //                function () {
+    //                    $(this).css('display', 'none');
+    //                    $('#overlay').fadeOut(400);
+    //                }
+    //            );
+    //    });
+
     $('.request').click(function () {
-        $('#overlay').fadeIn(400,
-            function () {
-                $('#modal_form')
-                    .css('display', 'block')
-                    .animate({
-                        opacity: 1
-                    }, 200);
+
+        $('#overlay')
+            .css('display', 'block')
+            .animate({
+                opacity: 1
+            }, {
+                queue: false,
+                duration: 100
+            });
+        $('#modal_form')
+            .css('display', 'block')
+            .animate({
+                opacity: 1
+            }, {
+                queue: false,
+                duration: 100
+            })
+            .addClass('open');
+
+    });
+
+    $('#modal_close').click(function () {
+        $('#modal_form')
+            .removeClass('open')
+            .animate({
+                opacity: 0
+            }, {
+                queue: false,
+                duration: 100
+            });
+        $('#modal_form').addClass('hidden');
+        $('#modal_form').removeClass('hidden');
+        setTimeout(function () {
+            $('#modal_form').css('display', 'none');
+        }, 500);
+        $('#overlay')
+            .css('display', 'none')
+            .animate({
+                opacity: 0
+            }, {
+                queue: false,
+                duration: 100
             });
     });
 
-    $('#modal_close, #overlay').click(function () {
-        $('#modal_form')
-            .animate({
-                    opacity: 0
-                }, 200,
-                function () {
-                    $(this).css('display', 'none');
-                    $('#overlay').fadeOut(400);
-                }
-            );
-    });
-
-/*******************Expertize**********************/
+    /*******************Expertize**********************/
     var expertizeItemHeight = $(".app").height();
     $(".learn-div").height(expertizeItemHeight);
     $(".idea").height(expertizeItemHeight);
@@ -55,7 +102,7 @@ $(document).ready(function () {
         $(".idea").height(expertizeItemHeight);
     });
 
-/********************Slick************************/
+    /********************Slick************************/
     var $status = $('.pagingInfo');
     var $slickElement = $('.cases-slick');
     $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -63,9 +110,9 @@ $(document).ready(function () {
         $status.text("Case " + i + ' of ' + slick.slideCount);
     });
     $slickElement.slick({});
-    
-    
-    
+
+
+
     var $status = $('.pagingInfo');
     var $slickElementHome = $('.cases-slickHome');
     $slickElementHome.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -73,14 +120,14 @@ $(document).ready(function () {
         $status.text("Case " + i + ' of ' + slick.slideCount);
     });
     $slickElementHome.slick({});
-    
 
-    function test (number) {
-            var slideIndex = number - 1;
-            var $slickElement = $('.cases-slick');
-            $slickElement.slick('slickGoTo', parseInt(slideIndex));
+
+    function test(number) {
+        var slideIndex = number - 1;
+        var $slickElement = $('.cases-slick');
+        $slickElement.slick('slickGoTo', parseInt(slideIndex));
     }
-    
+
     if (window.location.hash === '#1') {
         test(1);
     }
@@ -105,9 +152,9 @@ $(document).ready(function () {
     if (window.location.hash === '#8') {
         test(8);
     }
-    
-    
-    
+
+
+
     /******************Cases POPUP**************/
     $(document).ready(function () {
         $('.popup-gallery').magnificPopup({
@@ -129,7 +176,7 @@ $(document).ready(function () {
         });
     });
 
-/***********************ABOUT.html******************/
+    /***********************ABOUT.html******************/
 
     $('.zoom-face').hover(function () {
         $(this).find('.text > p').animate({

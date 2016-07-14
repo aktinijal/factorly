@@ -5,6 +5,9 @@
     }
 }
 
+
+/*****1920px******/
+
 @media (max-width: 1920px) {
     body {
         font-size: 23px;
@@ -109,11 +112,11 @@
         padding-top: 95px;
         /*        padding-bottom: 370px;*/
     }
-    button.request, #modal_form button[type="submit"] {
+    button.request,
+    #modal_form button[type="submit"] {
         margin-top: 40px;
         width: 175px;
         height: 75px;
-        font: 20px/35px LarsseitMedium;
     }
     /**********************EXPERTIZE**********************/
     h4.sectionName {
@@ -126,10 +129,9 @@
         margin-right: 20px;
     }
     .expertize {
-        margin-top: 185px;
+        margin-top: 165px;
         margin-bottom: 240px;
     }
-    .back h1 {}
     .learn span {
         height: 60px;
         line-height: 60px;
@@ -138,7 +140,6 @@
     .expertize p {
         margin-bottom: 40px;
     }
-    .expertize li {}
     .expertize li img {
         width: 35px;
         margin-right: 20px;
@@ -187,9 +188,6 @@
     footer .request {
         margin-top: 0;
     }
-    .copyright p {
-        /*        font: 18px/35px LarsseitMedium;*/
-    }
     /**************************CASE******************/
     .cases .back {
         top: 0px;
@@ -204,7 +202,6 @@
     h4.name {
         margin-top: 62px;
     }
-    h5.position {}
     .cases footer {
         margin-top: 320px;
     }
@@ -215,7 +212,20 @@
         height: 25px;
         background-size: 75%;
     }
+    footer.cases-footer {
+        position: absolute;
+        bottom: 0;
+        background-color: #f0f0f0;
+        text-align: center;
+        width: 100%;
+        height: 180px;
+        line-height: 80px;
+        padding: 50px 40px;
+    }
     /**************************about.html******************/
+    .about {
+        background: #f0f0f0 url(../img/about/background1920.png) no-repeat top right;
+    }
     .faces h4.sectionName {
         top: 120px;
     }
@@ -243,7 +253,7 @@
     }
     .why {
         margin-bottom: 230px;
-        padding-top: 200px;
+        padding-top: 300px;
     }
     .ambiance h4.sectionName {
         width: 160px;
@@ -260,7 +270,13 @@
     .contacts .request {
         margin-top: 25px;
     }
+    .about .footer-bg {
+        display: block;
+    }
 }
+
+
+/****1680px******/
 
 @media (max-width: 1680px) {
     .first-triangle {
@@ -287,19 +303,8 @@
         z-index: -2;
         zoom: 1;
     }
-    .footer-bg2 {
-        position: absolute;
-        bottom: 0;
-        height: 1085px;
-        width: 100%;
-        background: url(../img/footer2.png) no-repeat;
-        background-color: #cfdee8;
-        z-index: -1;
-        zoom: 1;
-        opacity: 0;
-    }
     /**************contact.html**************/
-    .contacts img {    
+    .contacts img {
         width: 50%;
         margin-bottom: 20px;
     }
@@ -315,9 +320,27 @@
     }
 }
 
+@media (max-width: 1600px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+
+/*****1366px******/
+
 @media (max-width: 1366px) {
     body {
         font-size: 18px;
+    }
+    button.request,
+    #modal_form button[type="submit"] {
+        width: 130px;
+        height: 60px;
+    }
+    /**************home.html***************/
+    .arrow {
+        width: 2%;
     }
     .hero {
         padding-top: 15px;
@@ -330,6 +353,9 @@
         margin-bottom: 15px;
     }
     /**************about.html***************/
+    .factorly {
+        top: 830px;
+    }
     .faces {
         padding-top: 75px;
     }
@@ -345,8 +371,13 @@
         padding-left: 25px;
         background-size: 15%;
     }
-    .factorly {
-        top: 590px;
+    /**************cases.html***************/
+    footer.cases-footer {
+        height: 135px;
+        line-height: 35px;
+    }
+    footer .request {
+        line-height: 60px;
     }
 }
 
@@ -355,13 +386,39 @@
 }
 
 @media (max-width: 992px) {
+    .row-custom {
+        width: 90%;
+    }
+    .sectionoffset {
+        width: 3%;
+        margin-left: -2%;
+    }
+    h1.title {
+        font: 207%/125% LarsseitMedium;
+    }
     /**************cases.html***************/
+    .project-screen:last-child {
+        margin-right: 3%;
+    }
+    .basilic,
+    .tomato {
+        right: -2.5%;
+    }
+    .back-buttons {
+        right: -10px;
+    }
     .quote img {
         width: 15%;
     }
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+    }
+    .arrow {
+        width: 5%;
+    }
     /**************about.html***************/
     .zoom-face {
         margin-bottom: 30px;
