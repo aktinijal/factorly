@@ -279,6 +279,13 @@
 /****1680px******/
 
 @media (max-width: 1680px) {
+    #modal_form {
+        padding: 100px 50px 50px 100px;
+    }
+    #modal_form .row {
+        font-size: 140%;
+        margin-top: 20px;
+    }
     .first-triangle {
         position: absolute;
         top: -1500px;

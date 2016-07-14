@@ -125,7 +125,7 @@
 
 #modal_form .row {
     font-family: LarsseitMedium;
-    font-size: 144.4%;
+    font-size: 140%;
     margin-top: 40px;
 }
 
@@ -419,9 +419,11 @@ h4.sectionName {
 .back {
     position: absolute;
     width: 60%;
+    z-index: 0;
+}
+.home .back{
     z-index: -1;
 }
-
 .back h1 {
     color: #fff;
     font: 478%/105% CaslonGraphiqueEF;
