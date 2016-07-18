@@ -206,7 +206,8 @@
     width: 450px;
 }
 
-#modal_form button[type="submit"], #modal_form input[type="submit"] {
+#modal_form button[type="submit"],
+#modal_form input[type="submit"] {
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -452,7 +453,8 @@ h4.sectionName {
     width: 60%;
     z-index: 0;
 }
-.principle .back {
+
+.principle .back, .ambiance .back {
     z-index: 1;
 }
 
@@ -461,7 +463,7 @@ h4.sectionName {
     font: 478%/105% CaslonGraphiqueEF;
 }
 
-table {    
+table {
     z-index: 1;
     position: relative;
 }
@@ -682,6 +684,12 @@ div.plus {
     top: 170px;
 }
 
+.ambianceSmall,
+.ambianceBig {
+    position: relative;
+    z-index: 2;
+}
+
 .ambianceSmall img,
 .ambianceBig img {
     width: 100%;
@@ -718,6 +726,7 @@ div.ambianceSmall:first-child,
 .back img {
     position: absolute;
     bottom: 0;
+    z-index: 2;
 }
 
 .action {
@@ -779,76 +788,18 @@ div.ambianceSmall:first-child,
     background-size: contain;
 }
 
-.pagingInfoBlock.casesPaging {
-    position: absolute;
-    /*    right: 740px;*/
-    top: 1370px;
-    bottom: auto;
-    z-index: 3;
-}
-
-.sliderBig.slick-prev,
-.sliderBig.slick-next {
-    position: absolute;
-    width: 80px;
-    height: 38px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: transparent;
-}
-
-.sliderBig.slick-prev {
-    top: 1385px;
-    right: 575px;
-    background: url('../img/customers-left.png') no-repeat;
-    background-size: 100%;
-    z-index: 3;
-}
-
-.sliderBig.slick-next {
-    top: 1420px;
-    right: 530px;
-    background: url('../img/customers-right.png') no-repeat;
-    background-size: 100%;
-}
-
-.pagingInfoBlock.casesPagingRed {
-    bottom: 575px;
-    top: auto;
-}
-
-.pagingInfoBlock.casesPagingRed .pagingInfo {
+.pagingInfoBlock.red p {
     color: #fd3b3b;
 }
 
-.slick-prev.red,
-.slick-next.red {
-    position: absolute;
-    width: 80px;
-    height: 38px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: transparent;
-}
-
-.cases-slick .slick-prev.red {
-    bottom: 590px;
-    /*    right: 575px;*/
-    top: auto;
+.slick-prev.red {
     background: url('../img/cases/arrow-left.png') no-repeat;
     background-size: 100%;
-    z-index: 3;
 }
 
-.cases-slick .slick-next.red {
-    bottom: 550px;
-    /*    right: 530px;*/
-    top: auto;
+.slick-next.red {
     background: url('../img/cases/arrow-right.png') no-repeat;
     background-size: 100%;
-    z-index: 3;
 }
 
 .cases .case {
@@ -929,7 +880,7 @@ div.ambianceSmall:first-child,
 }
 
 .product-details {
-    margin-bottom: 400px;
+    padding-bottom: 400px;
 }
 
 .product-details ul li {
