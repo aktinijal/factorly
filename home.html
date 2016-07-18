@@ -160,14 +160,6 @@
         </div><!--end of expertize-->
 
 
-
-
-
-
-
-
-
-
         <div class="case" id="case">
             <div class="sectionoffset">
                 <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Cases</h4>
@@ -218,46 +210,68 @@
             <a href="#principle" class="down-scroll">
                 <img class="arrow" src="img/arrow.png" alt="">
             </a>
-        </div>
-
-
+        </div>    
+        
+        
         <div class="principle" id="principle">
             <div class="sectionoffset">
                 <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Principle</h4>
             </div>
+
             <div class="row-custom">
                 <div class="row">
                     <div class="back">
                         <h1>We <br>are not <br>an agency, <br>we are <br>your <br>partner</h1>
                     </div>
 
-                    <div class="principle-item n-pad-r-l col-lg-3 col-lg-offset-5 col-md-3 col-md-offset-5 col-sm-4 col-sm-offset-3 col-xs-6">
-                        <h2>We do <br> really care</h2>
-                        <p>Nullam faucibus, nibh a tincidunt tincidunt, ipsum dolor mattis eros, vel tincidunt nibh urna ac libero. Ut sit amet ex et justo fringilla.</p>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h2>We do <br> really care</h2>
+                            </td>
+                            <td></td>
+                            <td>
+                                <h2>We already <br> know</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Nullam faucibus, nibh a tincidunt tincidunt, ipsum dolor mattis eros, vel tincidunt nibh urna ac libero. Ut sit amet ex et justo fringilla.</p>
+                            </td>
+                            <td></td>
+                            <td>
+                                <p>Uvitae risus commodo tempus aliquet sit amet vitae nunc. Donec volutpat, enim quisom hendrer sagittis, arcu tellus cursus justo, quam.</p>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h2>It isn’t just <br> about code</h2>
+                            </td>
+                            <td></td>
+                            <td>
+                                <h2>We already <br> know</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Vestibulum ante massa, cursus at convallis eu, viverra sit ameto arcu. Aliquam ornare nisl a ex interdum rutrum. Sed ac sollicitudin eros.</p>
+                            </td>
+                            <td></td>
+                            <td>
+                                <p>Pellentesque auctor qu arcu. In vitae mi placerat, vestibulu sem eget, sollicitudin lorem. Aenean laorporttitor, vel nus momento nales nunc.</p>
+                            </td>
+                        </tr>
+                    </table>
 
-                    </div>
-
-                    <div class="principle-item n-pad-r-l col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-6">
-                        <h2>We already <br> know</h2>
-                        <p>Uvitae risus commodo tempus aliquet sit amet vitae nunc. Donec volutpat, enim quisom hendrer sagittis, arcu tellus cursus justo, quam.</p>
-                    </div>
-
-                    <div class="principle-item n-pad-r-l col-lg-3 col-lg-offset-5 col-md-3 col-md-offset-5 col-sm-4 col-sm-offset-3 col-xs-6">
-                        <h2>It isn’t just <br> about code</h2>
-                        <p>Vestibulum ante massa, cursus at convallis eu, viverra sit ameto arcu. Aliquam ornare nisl a ex interdum rutrum. Sed ac sollicitudin eros.</p>
-                    </div>
-                    <div class="principle-item n-pad-r-l col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-6">
-                        <h2>We solve <br> actual issues</h2>
-                        <p>Pellentesque auctor qu arcu. In vitae mi placerat, vestibulu sem eget, sollicitudin lorem. Aenean laorporttitor, vel nus momento nales nunc.</p>
-                    </div>
                 </div>
             </div>
-
-            <a href="#action" class="down-scroll">
-                <img class="arrow" src="img/arrow.png" alt="">
-            </a>
-        </div>
-
+        </div><!--end of principle-->
+               
 
         <div class="action" id="action">
             <div class="row">
@@ -278,9 +292,10 @@
         </div>
         <!--end of action-->
 
-        <div class="footer-bg"></div>
-        <div class="footer-bg2"></div>
+    
+<!--        <div class="footer-bg2"></div>-->
 
+    <div class="footer-bg"></div>
         <footer>
             <div class="row">
                 <div class="col-lg-12">
@@ -299,12 +314,57 @@
             </div>
         </footer>
 
-
-
     </div>
     <!--end of .wrapper-->
 
+    <div id="modal_form">
+        <span id="modal_close"></span>
+        <form action="https://factorlysmtp.herokuapp.com/mail" role="form" method="post"  id="modal" name="form">
+            <div class="row">
+                My name is
+                <input type="text" name="firstname" placeholder="Michael Cohen"> and you can
+                <br> reach me at
+                <input type="email" name="email" placeholder="dontbeshy@factorly.io"> or
+                <input type="tel" name="phone" placeholder="phone number">.
+            </div>
 
+            <div class="row">
+                I`m looking for a partner for
+                <select name="discipline" form="modal">
+                    <option placeholder="discipline">discipline</option>
+                    <option value=".">.</option>
+                    <option value="..">..</option>
+                    <option value="...">...</option>
+                </select>
+                with a goal to
+                <br> complete that near
+                <div id="datetimepicker1" class="input-append date">
+                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text" name="date" placeholder="date or timeframe"></input>
+                    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+                </div>
+                and want to
+                <br> stay around a budget of
+                <select name="amount" form="modal">
+                    <option value="rough amount">rough amount</option>
+                    <option value=".">.</option>
+                    <option value="..">..</option>
+                    <option value="...">...</option>
+                </select>.
+            </div>
+            <div class="row">
+                My message is
+                <input type="text" name="comment" placeholder="message here">.
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+<!--
     <div id="modal_form">
         <span id="modal_close"></span>
         <form type="POST" action="https://factorlysmtp.herokuapp.com/mail" role="form" id="modal">
@@ -350,6 +410,7 @@
             <button type="submit">Send</button>
         </form>
     </div>
+-->
     <div id="overlay"></div>
 
 

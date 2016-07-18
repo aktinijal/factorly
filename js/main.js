@@ -2,20 +2,20 @@ $(document).ready(function () {
 
     function setSectionHeight() {
 
-            var height = $(window).height();
-            var heroPadTop = $('.hero').css('padding-top');
-            heroPadTop = parseInt(heroPadTop, 10);
+        var height = $(window).height();
+        var heroPadTop = $('.hero').css('padding-top');
+        heroPadTop = parseInt(heroPadTop, 10);
 
-            var headerHei = $('.header').css('height');
-            headerHei = parseInt(headerHei, 10);
+        var headerHei = $('.header').css('height');
+        headerHei = parseInt(headerHei, 10);
 
-            $('.hero').height(height - headerHei - heroPadTop);
-            $('.expertize').height(height);
-            $('.home .case').height(height);
-            $('.principle').height(height);
+        $('.hero').height(height - headerHei - heroPadTop);
+        $('.expertize').height(height);
+        $('.home .case').height(height);
+        $('.principle').height(height);
 
-            var pageHeight = $('.wrapper').height();
-            $('.tempor').height(pageHeight);
+        var pageHeight = $('.wrapper').height();
+        $('.tempor').height(pageHeight);
 
     }
 
@@ -206,6 +206,14 @@ $(document).ready(function () {
         });
     });
 
+
+    function validateForm() {
+        var x = document.forms["form"]["firstname"].value;
+        if (x == null || x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    };
 
 
 });
