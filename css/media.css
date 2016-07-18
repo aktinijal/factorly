@@ -285,14 +285,9 @@
         background: url(../img/background-topsecond16802.png) no-repeat bottom right;
     }
     .footer-bg {
-        position: absolute;
-        bottom: 0;
         height: 1085px;
-        width: 100%;
         background: url(../img/footer1.png) no-repeat;
         background-color: #cfdee8;
-        z-index: -2;
-        zoom: 1;
     }
     /**************contact.html**************/
     .contacts img {
