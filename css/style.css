@@ -452,13 +452,17 @@ h4.sectionName {
     width: 60%;
     z-index: 0;
 }
+.principle .back {
+    z-index: 1;
+}
 
 .back h1 {
     color: #fff;
     font: 478%/105% CaslonGraphiqueEF;
 }
 
-table {
+table {    
+    z-index: 1;
     position: relative;
 }
 
