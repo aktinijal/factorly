@@ -185,13 +185,11 @@ $(document).ready(function () {
 
 
     function validateForm() {
-        debugger;
         
         var email = $('.email').val();
         var phone = $('.input-phone').val();
         var emptyEmail = (email == null || email == "");
         var phoneEmail = (phone == null || phone == "");
-        debugger;
         if(emptyEmail && phoneEmail){
            alert("At least name or phone must be filled out");
             if(emptyEmail){
