@@ -141,9 +141,11 @@
     font-size: 100%;
     line-height: 184.6%;
     padding: 0 0 0 10px;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid #fff;
 }
-
+#modal_form .message{
+    width: 80%;
+}
 #modal_form input[name="phone"],
 #modal_form input[name="date"],
 #modal_form select,
@@ -151,38 +153,54 @@
     font-family: LarsseitMedium;
     font-size: 100%;
     color: #111;
-    border-bottom-color: #111;
+    border-bottom-color: #fff;
 }
 
+#modal_form select{
+    color: #fff;
+}
+#modal_form option{
+    color: #111;
+}
+::-webkit-select-placeholder {
+    font-family: LarsseitMedium;
+    font-size: 100%;
+    color: #fff;
+    border-bottom-color: #fff;
+}
 ::-webkit-input-placeholder {
     font-family: LarsseitMedium;
     font-size: 100%;
-    color: #111;
-    border-bottom-color: #111;
+    color: #fff;
+    border-bottom-color: #fff;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
     font-family: LarsseitMedium;
     font-size: 100%;
-    color: #111;
-    border-bottom-color: #111;
+    color: #fff;
+    border-bottom-color: #fff;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
     font-family: LarsseitMedium;
     font-size: 100%;
-    color: #111;
-    border-bottom-color: #111;
+    color: #fff;
+    border-bottom-color: #fff;
 }
 
 :-ms-input-placeholder {
     font-family: LarsseitMedium;
     font-size: 100%;
-    color: #111;
-    border-bottom-color: #111;
+    color: #fff;
+    border-bottom-color: #fff;
 }
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 
 #datetimepicker1 {
     display: inline-block;
@@ -206,6 +224,25 @@
     width: 450px;
 }
 
+.notvalid::-webkit-input-placeholder{
+    color: red;
+    border-bottom-color: red !important;
+}
+.notvalid:-moz-placeholder{
+    color: red;
+    border-bottom-color: red !important;
+}
+.notvalid::-moz-placeholder{
+    color: red;
+    border-bottom-color: red !important;
+}
+.notvalid:-ms-input-placeholder{
+    color: red;
+    border-bottom-color: red !important;
+}
+#modal_form .notvalid{
+    border-bottom-color: red !important;
+}
 #modal_form button[type="submit"],
 #modal_form input[type="submit"] {
     position: absolute;

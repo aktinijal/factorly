@@ -23,29 +23,6 @@ $(document).ready(function () {
     $(window).resize(setSectionHeight);
 
     /********************Modal***************************/
-    //    $('.request').click(function () {
-    //        $('#overlay').fadeIn(400,
-    //            function () {
-    //                $('#modal_form')
-    //                    .css('display', 'block')
-    //                    .animate({
-    //                        opacity: 1
-    //                    }, 200);
-    //            });
-    //    });
-
-    //    $('#modal_close, #overlay').click(function () {
-    //        $('#modal_form')
-    //            .animate({
-    //                    opacity: 0
-    //                }, 200,
-    //                function () {
-    //                    $(this).css('display', 'none');
-    //                    $('#overlay').fadeOut(400);
-    //                }
-    //            );
-    //    });
-
     $('.request').click(function () {
 
         $('#overlay')
@@ -208,12 +185,48 @@ $(document).ready(function () {
 
 
     function validateForm() {
-        var x = document.forms["form"]["firstname"].value;
-        if (x == null || x == "") {
-            alert("Name must be filled out");
-            return false;
+        debugger;
+        
+        var email = $('.email').val();
+        var phone = $('.input-phone').val();
+        var emptyEmail = (email == null || email == "");
+        var phoneEmail = (phone == null || phone == "");
+        debugger;
+        if(emptyEmail && phoneEmail){
+           alert("At least name or phone must be filled out");
+            if(emptyEmail){
+                $('.email').addClass('notvalid');
+            };
+            if(phoneEmail){
+                $('.input-phone').addClass('notvalid');
+            }
         }
+        
     };
+    
+    $('input').focus(function (){
+        $(this).removeClass('notvalid');
+        $(this).css('color', '#111');
+        $(this).css('borderBottomColor', '#111');
+    });
+    
+    $('.send').on('click', function(){
+        validateForm();
+    });
+    
+    $('#modal').submit( function() {
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function() {
+            alert("Thanks for you trust!");
+        });
+        return false;
+    
+    });
+    
+    
 
 
 });

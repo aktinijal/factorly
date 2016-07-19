@@ -166,29 +166,32 @@
     </div>
 
 
-    <div id="modal_form">
+        <div id="modal_form">
         <span id="modal_close"></span>
-        <form type="POST" action="https://factorlysmtp.herokuapp.com/mail" role="form" id="modal">
+        <form  action="https://factorlysmtp.herokuapp.com/mail" role="form" method="post"  id="modal" name="form">
             <div class="row">
                 My name is
-                <input type="text" name="firstname" value="Michael Cohen"> and you can
+                    <input type="text" name="firstname" placeholder="Your name" required>
+                 and you can
                 <br> reach me at
-                <input type="email" name="email" value="dontbeshy@factorly.io"> or
-                <input type="tel" name="phone" value="phone number">.
+                <input type="email" name="email" placeholder="Your email" class="email"> or
+                <input class="input-phone" type="text" name="phone" placeholder="phone number">.
             </div>
 
             <div class="row">
                 I`m looking for a partner for
                 <select name="discipline" form="modal">
-                    <option value="discipline">discipline</option>
-                    <option value=".">.</option>
-                    <option value="..">..</option>
-                    <option value="...">...</option>
+                    <option selected="selected" class="default-select">Choose OS</option>
+                    <option>Android</option>
+                    <option>iOS</option>
+                    <option>TvOS</option>
+                    <option>WatchOS</option>
+                    <option>Other</option>
                 </select>
                 with a goal to
                 <br> complete that near
                 <div id="datetimepicker1" class="input-append date">
-                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text" name="date" value="date or timeframe"></input>
+                    <input data-format="dd/MM/yyyy" type="text" name="date" placeholder="Your timeframe"></input>
                     <span class="add-on">
       <i data-time-icon="icon-time" data-date-icon="icon-calendar">
       </i>
@@ -197,18 +200,19 @@
                 and want to
                 <br> stay around a budget of
                 <select name="amount" form="modal">
-                    <option value="rough amount">rough amount</option>
-                    <option value=".">.</option>
-                    <option value="..">..</option>
-                    <option value="...">...</option>
+                    <option value="rough budget">rough amount</option>
+                    <option>&lt;10K€</option>
+                    <option>&lt;30K€</option>
+                    <option>&lt;50K€</option>
+                    <option>&gt;50K€</option>
                 </select>.
             </div>
             <div class="row">
                 My message is
-                <input type="text" name="comment" value="message here">.
+                <input type="text" class="message" name="comment" placeholder="How can we help you?">.
             </div>
 
-            <button type="submit">Send</button>
+            <button type="submit" class="send">Send</button>
         </form>
     </div>
     <div id="overlay"></div>
