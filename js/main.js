@@ -219,6 +219,7 @@ $(document).ready(function () {
             data: $(this).serialize()
         }).done(function() {
             alert("Thanks for your trust!");
+            location.reload();
         });
         return false;
     
