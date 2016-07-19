@@ -61,7 +61,7 @@
     bottom: 0;
     height: 1744px;
     width: 100%;
-    background: url(../img/footer2880.1.png) no-repeat;
+    background: url(../img/footer2880.1.png) no-repeat bottom left;
     background-color: #cfdee8;
     z-index: 0;
     zoom: 1;
@@ -769,11 +769,6 @@ div.ambianceSmall:first-child,
 .action {
     margin-top: 600px;
 }
-
-.about .footer-bg {
-    display: none;
-}
-
 
 /*********************Case.html********************/
 

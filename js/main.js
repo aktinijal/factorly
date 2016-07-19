@@ -212,10 +212,10 @@ $(document).ready(function () {
         if (!phoneEmail && !emptyName) {
             validForm = true;
         }
-
-        if (validForm) {
-            modalSubmit();
-        }
+        return validForm;
+//        if (validForm) {
+//            modalSubmit();
+//        }
 
     };
 
@@ -225,12 +225,16 @@ $(document).ready(function () {
         $(this).css('borderBottomColor', '#111');
     });
 
-    $('.send').on('click', function () {
-        validateForm();
-    });
+//    $('.send').on('click', function () {
+//        
+//        validateForm();
+//    });
 
-    function modalSubmit() {
-        $('#modal').submit(function () {
+       
+           $('#modal').submit(function (event) {
+               event.preventDefault();
+            var validForm = validateForm();
+                if (validForm) {
             $.ajax({
                 type: "POST",
                 url: "mail.php",
@@ -240,9 +244,9 @@ $(document).ready(function () {
                 location.reload();
             });
             return false;
+                }
 
-        });
-    }
+        }); 
 
 
 
