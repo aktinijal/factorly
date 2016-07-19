@@ -185,47 +185,67 @@ $(document).ready(function () {
 
 
     function validateForm() {
+        var validForm = false;
         
+        var name = $('.input-name').val();
         var email = $('.email').val();
         var phone = $('.input-phone').val();
+        var emptyName = (name == null || name == "");
         var emptyEmail = (email == null || email == "");
         var phoneEmail = (phone == null || phone == "");
-        if(emptyEmail && phoneEmail){
-           alert("At least name or phone must be filled out");
-            if(emptyEmail){
+        if (emptyName){
+           alert("Tell us your name, please"); 
+        }
+        if (emptyEmail && phoneEmail) {
+            alert("At least email or phone must be filled out");
+            if (emptyEmail) {
                 $('.email').addClass('notvalid');
             };
-            if(phoneEmail){
+            if (phoneEmail) {
                 $('.input-phone').addClass('notvalid');
-            }
+            };
         }
         
+        if (!emptyEmail && !emptyName) {
+            validForm = true;
+        };
+        if (!phoneEmail && !emptyName) {
+            validForm = true;
+        }
+
+        if (validForm) {
+            modalSubmit();
+        }
+
     };
-    
-    $('input').focus(function (){
+
+    $('input').focus(function () {
         $(this).removeClass('notvalid');
         $(this).css('color', '#111');
         $(this).css('borderBottomColor', '#111');
     });
-    
-    $('.send').on('click', function(){
+
+    $('.send').on('click', function () {
         validateForm();
     });
-    
-    $('#modal').submit( function() {
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
-        }).done(function() {
-            alert("Thanks for your trust!");
-            location.reload();
+
+    function modalSubmit() {
+        $('#modal').submit(function () {
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: $(this).serialize()
+            }).done(function () {
+                alert("Thanks for your trust!");
+                location.reload();
+            });
+            return false;
+
         });
-        return false;
-    
-    });
-    
-    
+    }
+
+
+
 
 
 });
