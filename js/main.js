@@ -220,7 +220,7 @@ $(document).ready(function () {
             url: "mail.php",
             data: $(this).serialize()
         }).done(function() {
-            alert("Thanks for you trust!");
+            alert("Thanks for your trust!");
         });
         return false;
     
