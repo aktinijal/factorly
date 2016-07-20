@@ -22,6 +22,15 @@ $(document).ready(function () {
     setSectionHeight();
     $(window).resize(setSectionHeight);
 
+
+    $(".down-scroll").on("click", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
     /********************Modal***************************/
     $('.request').click(function () {
 
@@ -186,15 +195,15 @@ $(document).ready(function () {
 
     function validateForm() {
         var validForm = false;
-        
+
         var name = $('.input-name').val();
         var email = $('.email').val();
         var phone = $('.input-phone').val();
         var emptyName = (name == null || name == "");
         var emptyEmail = (email == null || email == "");
         var phoneEmail = (phone == null || phone == "");
-        if (emptyName){
-           alert("Tell us your name, please"); 
+        if (emptyName) {
+            alert("Tell us your name, please");
         }
         if (emptyEmail && phoneEmail) {
             alert("At least email or phone must be filled out");
@@ -205,7 +214,7 @@ $(document).ready(function () {
                 $('.input-phone').addClass('notvalid');
             };
         }
-        
+
         if (!emptyEmail && !emptyName) {
             validForm = true;
         };
@@ -213,9 +222,9 @@ $(document).ready(function () {
             validForm = true;
         }
         return validForm;
-//        if (validForm) {
-//            modalSubmit();
-//        }
+        //        if (validForm) {
+        //            modalSubmit();
+        //        }
 
     };
 
@@ -225,16 +234,10 @@ $(document).ready(function () {
         $(this).css('borderBottomColor', '#111');
     });
 
-//    $('.send').on('click', function () {
-//        
-//        validateForm();
-//    });
-
-       
-           $('#modal').submit(function (event) {
-               event.preventDefault();
-            var validForm = validateForm();
-                if (validForm) {
+    $('#modal').submit(function (event) {
+        event.preventDefault();
+        var validForm = validateForm();
+        if (validForm) {
             $.ajax({
                 type: "POST",
                 url: "mail.php",
@@ -244,9 +247,9 @@ $(document).ready(function () {
                 location.reload();
             });
             return false;
-                }
+        }
 
-        }); 
+    });
 
 
 

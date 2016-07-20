@@ -1,15 +1,4 @@
 $(document).ready(function () {
-
-//    function setArrow() {
-//        var heroOffset = $('.hero-text').offset();
-//        $('.arrow').css({
-//            'top': heroOffset.top + $('.hero-text').height() + 25 + 'px'
-//        });
-//    }
-//    setArrow();
-//    $(window).resize(setArrow);
-
-    
     
     $('.first-triangle').animate({
         top: 0
@@ -64,12 +53,4 @@ $(document).ready(function () {
         });
     });
 
-    $(".down-scroll").on("click", function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({
-            scrollTop: top
-        }, 1000);
-    });
 });

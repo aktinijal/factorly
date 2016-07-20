@@ -143,9 +143,11 @@
     padding: 0 0 0 10px;
     border-bottom: 2px solid #fff;
 }
-#modal_form .message{
+
+#modal_form .message {
     width: 80%;
 }
+
 #modal_form input[name="phone"],
 #modal_form input[name="date"],
 #modal_form select,
@@ -156,18 +158,21 @@
     border-bottom-color: #fff;
 }
 
-#modal_form select{
+#modal_form select {
     color: #fff;
 }
-#modal_form option{
+
+#modal_form option {
     color: #111;
 }
+
 ::-webkit-select-placeholder {
     font-family: LarsseitMedium;
     font-size: 100%;
     color: #fff;
     border-bottom-color: #fff;
 }
+
 ::-webkit-input-placeholder {
     font-family: LarsseitMedium;
     font-size: 100%;
@@ -197,10 +202,22 @@
     color: #fff;
     border-bottom-color: #fff;
 }
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus:-moz-placeholder {
+    color: transparent
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent
+}
 
 #datetimepicker1 {
     display: inline-block;
@@ -224,25 +241,30 @@
     width: 450px;
 }
 
-.notvalid::-webkit-input-placeholder{
+.notvalid::-webkit-input-placeholder {
     color: red;
     border-bottom-color: red !important;
 }
-.notvalid:-moz-placeholder{
+
+.notvalid:-moz-placeholder {
     color: red;
     border-bottom-color: red !important;
 }
-.notvalid::-moz-placeholder{
+
+.notvalid::-moz-placeholder {
     color: red;
     border-bottom-color: red !important;
 }
-.notvalid:-ms-input-placeholder{
+
+.notvalid:-ms-input-placeholder {
     color: red;
     border-bottom-color: red !important;
 }
-#modal_form .notvalid{
+
+#modal_form .notvalid {
     border-bottom-color: red !important;
 }
+
 #modal_form button[type="submit"],
 #modal_form input[type="submit"] {
     position: absolute;
@@ -457,6 +479,7 @@ button.request {
     right: 49%;
     bottom: 10px;
     cursor: pointer;
+    z-index: 2;
 }
 
 
@@ -491,8 +514,11 @@ h4.sectionName {
     z-index: 0;
 }
 
-.principle .back, .ambiance .back {
+.principle .back{
     z-index: 1;
+}
+.ambiance .back {
+    z-index: 3;
 }
 
 .back h1 {
@@ -770,6 +796,7 @@ div.ambianceSmall:first-child,
     margin-top: 600px;
 }
 
+
 /*********************Case.html********************/
 
 .cases .logo img {
@@ -779,7 +806,20 @@ div.ambianceSmall:first-child,
 .cases .logo img:last-child {
     margin-top: 20px;
 }
-
+.cases .arrow {
+    opacity: 1;
+    bottom: -150px;
+}
+.cases .down-scroll {
+    text-align: center;
+    display: block;
+}
+.down-scroll span {
+    color: #111111;
+    position: absolute;
+    left: 46%;
+    bottom: -100px;
+}
 .case1 {
     background: #dee7da url(../img/cases/grey1.png) no-repeat bottom right;
     background-size: contain;
@@ -1027,4 +1067,166 @@ footer .request {
     height: 200px;
     width: 100%;
     padding: 50px 90px;
+}
+
+
+/********************CLOCK*************************/
+
+.ampm {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    font-size: 25px;
+    color: #595959;
+    bottom: 32%;
+    left: 45%;
+}
+
+.clock {
+    margin-left: -15%;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url(../img/contact/clock.png) no-repeat center;
+    background-size: 100%;
+    border-radius: 50%;
+}
+
+.clock.simple:after {
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 51%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10;
+}
+
+.simple-red {
+    background: #fd3b3b;
+    border-radius: 50%;
+    position: absolute;
+    left: 51%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    width: 3%;
+    height: 3%;
+    z-index: 11;
+}
+
+.minutes-container,
+.hours-container,
+.seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hours {
+    position: absolute;
+    top: 40%;
+    left: 49.25%;
+    width: 1.5%;
+    height: 10%;
+    background: #fff;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.minutes {
+    position: absolute;
+    top: 35%;
+    left: 49.75%;
+    width: 1.5%;
+    height: 15%;
+    background: #fff;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.seconds {
+    background: #fd3b3b;
+    height: 18%;
+    left: 49.25%;
+    position: absolute;
+    top: 32%;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    width: 1.5%;
+    z-index: 12;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.hours-container {
+    animation: rotate 43200s infinite linear;
+}
+
+.minutes-container {
+    animation: rotate 3600s infinite steps(60);
+}
+
+.seconds-container {
+    animation: rotate 60s infinite steps(60);
+}
+
+@media (max-width: 1920px) {
+    .clock {
+        margin-left: -5%;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    .hours {
+        top: 30%;
+        left: 49.25%;
+        width: 1.5%;
+        height: 20%;
+    }
+    .minutes {
+        top: 20%;
+        left: 49.75%;
+        width: 1.5%;
+        height: 30%;
+    }
+    .seconds {
+        height: 33%;
+        left: 49.25%;
+        top: 17%;
+    }
+    .ampm {
+        height: 20px;
+        font-size: 20px;
+        bottom: 25%;
+        left: 42%;
+    }
+}
+
+@media (max-height:700px) and (min-width: 768px) {
+    .clock {
+        margin-bottom: 10px;
+        width: 120px;
+        height: 120px;
+    }
+    .ampm {
+        font-size: 15px;
+    }
 }
