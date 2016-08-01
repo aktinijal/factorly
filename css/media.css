@@ -534,9 +534,6 @@
 }
 
 @media (max-width: 768px) {
-    .menu-small {
-        display: block;
-    }
     .arrow {
         right: 47%;
     }
@@ -590,6 +587,9 @@
     }
     .menu {
         display: none;
+    }
+    .menu-small {
+        display: block;
     }
     .phone-wrapper {
         width: 70%;
@@ -925,10 +925,6 @@
     .ambiance .back img {
         margin-top: 0;
     }
-    footer,
-    .contact footer {
-        height: 90px;
-    }
 }
 
 @media (max-width: 360px) {
@@ -946,6 +942,10 @@
     }
     .cases .slick-img-wrap {
         padding: 50px 25px 30%;
+    }
+    footer,
+    .contact footer {
+        height: 90px;
     }
 }
 
