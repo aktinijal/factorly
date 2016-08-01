@@ -15,12 +15,12 @@
     <link type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link type="text/css" href="css/media.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
     <link rel="stylesheet" href="magnificPopup/dist/magnific-popup.css">
 
 </head>
 
-<body>
+<body class="cases-body">
     <div class="for-footer">
         <div class="case4 cases" id="case4">
             <div class="row">
@@ -30,7 +30,23 @@
                             <img src="img/logo.png" alt="" width="55px" height="55px">
                             <img src="img/Factorly.png" alt="" width="140px" height="33px">
                         </div>
-                        <div class="navigation right">
+
+                        <div id="touch-menu" class="right">
+                            <img src="img/touch-menu.png" alt="">
+                        </div>
+
+                        <div class="menu navigation right">
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="expertize.html">Expertize</a></li>
+                                <li><a href="case1.html" class="active">Cases</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="menu-small">
                             <ul>
                                 <li><a href="home.html">Home</a></li>
                                 <li><a href="expertize.html">Expertize</a></li>
@@ -42,26 +58,34 @@
                     </div>
                 </div>
             </div>
+            
             <div class="case">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div>
-                            <img style="height:auto" src="img/case4.png" alt="" width="100%">
+                        <div class="slick-img-wrap">
+                            <h2><img class="right" src="img/case4.0.png" alt="">Zonga</h2>
+                            <h4><span class="red">Client Project</span><br>2012 - 2013</h4>
+                            <p>The cloud-based music player that lets you listen to your music online or offline, on any device.</p>
                         </div>
+
                         <div class="pagingInfoBlock casesPaging black">
                             <p class="pagingInfo">Case 4 of 8</p>
                         </div>
-                        <a href="case3.html" class="slick-prev"></a>
-                        <a href="case5.html" class="slick-next"></a>
+                        <a href="case3.html" class="transition slick-prev"></a>
+                        <a href="case5.html" class="transition slick-next"></a>
                     </div>
                 </div>
                 <a href="#projects" class="down-scroll">
-                <span>project details</span>
-                <img class="arrow" src="img/arrow.png" alt="">
+                    <span>Explore project</span>
+                    <img class="arrow" src="img/arrow.png" alt="">
                 </a>
             </div>
-            
+
+           
             <div class="projects" id="projects">
+                <div class="sectionoffset">
+                    <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Project presentation</h4>
+                </div>
                 <div class="project">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -69,23 +93,28 @@
                                 <div class="back">
                                     <h1>Cloud-based <br>music player</h1>
                                 </div>
-                                <div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-6 col-sm-offset-5">
-                                    <p class="projects-text">Zonga is a Romanian music streaming service developed by Trilulilu. Launched in 2012, the service quickly became the most important local music service, with over 22 million songs available for listening. In 2011 they came to us looking for a mobile development team that would be able to develop their complex service into two native apps – one for Android and one for iOS. They started working with us right away trusting us with all the stages of the project, from product concept and wireframing to design and development.</p>
+                                <div class="n-pad-r-l col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-6 col-sm-offset-5">
+                                    <p class="projects-text">Zonga is a Romanian music streaming service developed by Trilulilu. Launched in 2012, the service quickly became the most important local music service, with over 22 million songs available for listening.
+                                        <br>
+                                        <br>In 2011 they came to us looking for a mobile development team that would be able to develop their complex service into two native apps – one for Android and one for iOS. They started working with us right away trusting us with all the stages of the project, from product concept and wireframing to design and development.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="screens row">
+                        <div class="sectionoffset">
+                            <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Screenshot</h4>
+                        </div>
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                             <div class="popup-gallery">
                                 <a href="img/cases/case4/case4.1.png">
-                                    <div class="project-screen">
+                                    <div class="first-project project-screen">
                                         <img src="img/cases/case4/case4.1.png" alt="">
                                     </div>
                                 </a>
 
                                 <a href="img/cases/case4/case4.2.png">
-                                    <div class="project-screen">
+                                    <div class="second-project project-screen">
                                         <img src="img/cases/case4/case4.2.png" alt="">
                                     </div>
                                 </a>
@@ -110,8 +139,11 @@
                         </div>
                     </div>
                     <div class="product-details">
+                        <div class="sectionoffset">
+                            <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Our work</h4>
+                        </div>
                         <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <div class="n-pad-r-l col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5">
                                         <ul>
@@ -119,22 +151,26 @@
                                             <li>UI & UX guidance</li>
                                             <li>Graphic design</li>
                                             <li>Front-end development</li>
+                                            <br>
                                         </ul>
                                     </div>
                                     <div class="col-lg-7 col-md-7">
                                         <p>The app we developed by tapptitude, a mobile application development agency based in Cluj-Napoca, Romania and includes all the features found in a typical music streaming application and some more! For instance, the app allows its users to download their favourite playlists so they can listen to their music offline. However, the music files had to be encrypted, and as a result, we ended up developing a custom media player. Another neat feature is the automatic synchronisation that allows one’s music to be synced over the cloud between all devices.</p>
+                                        <div class="sectionoffset">
+                                            <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Customer testimonial</h4>
+                                        </div>
                                         <div class="quote">
                                             <img src="img/cases/quote.png" alt="">
                                             <p>«The quality of our apps always needs to be state of the art. Our customers pay for the service because they love music and thus expect a great listening experience. The Factorly team was the only one that was able to deliver on our high expectations in terms of development quality, deadline meeting and reliability. Working with them has been a breeze and I would recommend them to anyone looking for a serious mobile development company.»</p>
                                             <h4 class="name">Sergiu Biris</h4>
                                             <h5 class="position">CEO of Zonga</h5>
                                         </div>
-                                        
-                                         <div class="pagingInfoBlock red">
+
+                                        <div class="pagingInfoBlock red">
                                             <p class="pagingInfo">Case 4 of 8</p>
                                         </div>
-                                        <a href="case3.html" class="slick-prev red"></a>
-                                        <a href="case5.html" class="slick-next red"></a>
+                                        <a href="case3.html" class="transition slick-prev red"></a>
+                                        <a href="case5.html" class="transition slick-next red"></a>
                                     </div>
                                 </div>
                             </div>
@@ -148,10 +184,6 @@
         <footer class="cases-footer">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="copyright left">
-                        <p>© 2016 Factorly, Inc. All rights reserved.</p>
-                    </div>
-                    <button class="request">Send Request</button>
                     <div class="social right">
                         <ul>
                             <li><a href="">Facebook</a></li>
@@ -159,19 +191,25 @@
                             <li><a href="">LinkedIn</a></li>
                         </ul>
                     </div>
+                    <div class="cases-button">
+                        <button class="request">
+                            Send Request</button>
+                    </div>
+                    <div class="copyright left">
+                        <p>© 2016 Factorly, Inc. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
 
 
-        <div id="modal_form">
+    <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal" name="form">
             <div class="row">
                 My name is
-                    <input type="text" name="firstname" placeholder="Your name" class="input-name">
-                 and you can
+                <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can
                 <br> reach me at
                 <input type="email" name="email" placeholder="Your email" class="email"> or
                 <input class="input-phone" type="text" name="phone" placeholder="phone number">.

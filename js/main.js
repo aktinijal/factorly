@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     function setSectionHeight() {
 
         var height = $(window).height();
@@ -14,13 +13,48 @@ $(document).ready(function () {
         $('.home .case').height(height);
         $('.principle').height(height);
 
-        var pageHeight = $('.wrapper').height();
-        $('.tempor').height(pageHeight);
+        $('.tempor').height(5 * height);
 
     }
 
-    setSectionHeight();
-    $(window).resize(setSectionHeight);
+    function setSectionHeight768() {
+
+        var height = $(window).height();
+        var heroPadTop = $('.hero').css('padding-top');
+        heroPadTop = parseInt(heroPadTop, 10);
+
+        var headerHei = $('.header').css('height');
+        headerHei = parseInt(headerHei, 10);
+
+        $('.hero').height(height - headerHei - heroPadTop);
+        $('.expertize').css('height', 'auto');
+        $('.home .case').css('height', 'auto');
+        $('.principle').css('height', 'auto');
+
+        $('.tempor').height(4 * height);
+
+    }
+
+    //        setSectionHeight();
+    //        $(window).resize(setSectionHeight);
+
+    var width = $(document).width();
+    if (width > 768) {
+        setSectionHeight();
+    } else if (width < 768) {
+        setSectionHeight768();
+    }
+
+    $(window).resize(function () {
+        var width = $(document).width();
+        if (width > 768) {
+            setSectionHeight();
+        } else {
+            setSectionHeight768();
+        }
+    });
+
+
 
 
     $(".down-scroll").on("click", function (event) {
@@ -31,6 +65,32 @@ $(document).ready(function () {
             scrollTop: top
         }, 1000);
     });
+    /************************Menu*********************/
+    $('#touch-menu, .menu-back').click(function () {
+        var menu = $('.menu-small');
+        if ($(menu).hasClass('menu-open')) {
+            $(menu).animate({
+                left: -600
+            }, 500);
+        } else {
+            $(menu).animate({
+                left: 0
+            }, 500);
+        }
+        
+        $('.menu-back').fadeToggle();
+        $(menu).toggleClass('menu-open');
+    });
+
+
+    $(window).resize(function () {
+        var wid = $(window).width();
+        var menu = $('.menu');
+        if (wid > 1070 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
+    });
+
     /********************Modal***************************/
     $('.request').click(function () {
 
@@ -76,16 +136,6 @@ $(document).ready(function () {
                 queue: false,
                 duration: 100
             });
-    });
-
-    /*******************Expertize**********************/
-    var expertizeItemHeight = $(".app").height();
-    $(".learn-div").height(expertizeItemHeight);
-    $(".idea").height(expertizeItemHeight);
-    $(window).resize(function () {
-        var expertizeItemHeight = $(".app").height();
-        $(".learn-div").height(expertizeItemHeight);
-        $(".idea").height(expertizeItemHeight);
     });
 
     /********************Slick************************/
@@ -161,6 +211,71 @@ $(document).ready(function () {
             }
         });
     });
+
+    //    $(document).ready(function () {
+    //        $(".cases-body").css("display", "none");
+    //        $(".cases-body").fadeIn(2000);
+    //
+    //        $("a.transition").click(function (event) {
+    //            event.preventDefault();
+    //            linkLocation = this.href;
+    //            $("body").fadeOut(1000, redirectPage);
+    //        });
+    //
+    //        function redirectPage() {
+    //            window.location = linkLocation;
+    //        }
+    //    });
+
+
+    $(document).ready(function () {
+        //            $(".cases-body").css("display", "none");
+        //            $(".cases-body").fadeIn(2000);
+        function getTop() {
+            var scrollTop = $(".cases-body").scrollTop();
+            return scrollTop;
+        }
+
+        //        var scr = $("a.transition").click(function (event) {
+        //            event.preventDefault();
+        //            var scrollTop = getTop();
+        //            console.log(scrollTop);
+        //            linkLocation = this.href;
+        //            redirectPage();
+        //            scroll(scrollTop);
+        //            return scrollTop;
+        //        });
+        //        scroll(scr);
+
+        function scroll(scrollTop) {
+            $('body').scrollTop(scrollTop);
+        }
+
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+
+
+        var promise = new Promise(function (resolve, reject) {
+            $("a.transition").click(function (event) {
+                event.preventDefault();
+                var scrollTop = getTop();
+                console.log(scrollTop);
+                linkLocation = this.href;
+                redirectPage();
+            });
+        });
+        promise.then(function (scrollTop) {
+            $('body').scrollTop(scrollTop);
+        });
+
+
+
+    });
+
+
+
+
 
     /***********************ABOUT.html******************/
 

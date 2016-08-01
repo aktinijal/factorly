@@ -16,7 +16,7 @@
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link type="text/css" href="css/media.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
-    <link rel="stylesheet" href="magnificPopup/dist/magnific-popup.css">
+    <!--    <link rel="stylesheet" href="magnificPopup/dist/magnific-popup.css">-->
 
 
 </head>
@@ -49,7 +49,12 @@
                         <img src="img/logo.png" alt="" width="55px" height="55px">
                         <img src="img/Factorly.png" alt="" width="140px" height="33px">
                     </div>
-                    <div class="navigation right">
+
+                    <div id="touch-menu" class="right">
+                        <img src="img/touch-menu.png" alt="">
+                    </div>
+
+                    <div class="menu navigation right">
                         <ul>
                             <li><a href="home.html" class="active">Home</a></li>
                             <li><a href="expertize.html">Expertize</a></li>
@@ -58,6 +63,20 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
+
+
+                    <div class="menu-small">
+                        <ul>
+                            <li><a href="home.html" class="active">Home</a></li>
+                            <li><a href="expertize.html">Expertize</a></li>
+                            <li><a href="case1.html">Cases</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-back"></div>
+
+
                 </div>
             </div>
         </div>
@@ -65,7 +84,7 @@
         <div class="hero">
             <div class="row-custom">
                 <div class="row">
-                    <div class="hero-text col-lg-6 col-md-6  col-sm-6 col-xs-7">
+                    <div class="hero-text col-lg-6 col-md-6  col-sm-6 col-xs-12">
                         <h1 class="title">We build <br> 
                                 beautiful apps with 
                                 Love & Care</h1>
@@ -81,7 +100,7 @@
                 <img class="arrow" src="img/arrow.png" alt="">
             </a>
         </div>
-        
+
 
         <div class="expertize" id="expertize">
             <div class="sectionoffset">
@@ -152,12 +171,38 @@
                         </tr>
                     </table>
 
+                    <div class="expertize-less-768">
+                        <h2>Have an <br> idea?</h2>
+                        <p>We build your MVP for iOS and Android. We determine with you the scope of features to build your MVP ready to be published on the app stores.</p>
+                        <li><img src="img/expertizeList1.png" alt="">Mobile Apps</li>
+                        <li><img src="img/expertizeList2.png" alt="">Internet of Things</li>
+                        <li><img src="img/expertizeList3.png" alt="">Virtual Reality</li>
+
+
+                        <h2>Have an <br> app?</h2>
+                        <p>We maintain and update your apps with new features. You determine the new features and roadmap for updates and let us take care of the rest.</p>
+
+                        <li><img src="img/expertizeList4.png" alt="">Platform Porting</li>
+
+                        <li><img src="img/expertizeList5.png" alt="">Growth and Promo</li>
+
+                        <li><img src="img/expertizeList6.png" alt="">Support and Update</li>
+
+                        <a class="learn right" href="">
+                            <p>Learn About Ex<span>pertise</span></p>
+                        </a>
+                    </div>
                 </div>
+
             </div>
+
+
             <a href="#case" class="down-scroll">
                 <img class="arrow" src="img/arrow.png" alt="">
             </a>
-        </div><!--end of expertize-->
+        </div>
+        <!--end of expertize-->
+
 
 
         <div class="case" id="case">
@@ -166,42 +211,76 @@
             </div>
             <div class="case-wrapper row-custom">
                 <a class="learn" href="case1.html">
-                    <p><span>Explo</span>re All Cases</p>
+                    <p class="more-768"><span>Explo</span>re All Cases</p>
+                    <p class="less-768">Explore Al<span>l Cases</span></p>
                 </a>
                 <div class="pagingInfoBlock">
                     <p class="pagingInfo"></p>
                 </div>
                 <div class="cases-slickHome">
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case4.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case4.0.png" alt="">
+                        Zonga
+                        </h2>
+                        <h4><span class="red">Client Project</span><br>2012 - 2013</h4>
+                        <p>The cloud-based music player that lets you listen to your music online or offline, on any device.</p>
                         <a href="case4.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case2.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case2.0.png" alt="">Riffsy</h2>
+                        <h4><span class="red">Client Project</span><br>2011- 2012</h4>
+                        <p>When words are not enough, let GIFs save the day. GIFs keyboard that adds a new level to your conversations.</p>
                         <a href="case2.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case3.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case3.0.png" alt="">Magnet Goose</h2>
+                        <h4><span class="red">Personal Startup</span><br>2015 - 2016</h4>
+                        <p>Smart service helps you turn photos into beautiful fridge magnets just in couple clicks.</p>
                         <a href="case3.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case1.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case1.0.png" alt="">Dine Market</h2>
+                        <h4><span class="red">Client Project</span><br>2014 - 2015</h4>
+                        <p>Easy online purchasing platform that connects restaurants to all of their vendors without headache.</p>
                         <a href="case1.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case5.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case5.0.png" alt="">Visor</h2>
+                        <h4><span class="red">Client Project</span><br>2014 - 2015</h4>
+                        <p>See what’s going on anywhere in the world using somebody else’s phone camera. Like being there.</p>
                         <a href="case5.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case6.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case6.0.png" alt="">Amparcat</h2>
+                        <h4><span class="red">Personal Startup</span><br>2015 - 2016</h4>
+                        <p>The most simple & smart mobile application for paying the parking in Romania.</p>
                         <a href="case6.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case7.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case7.0.png" alt="">Palate Wizard</h2>
+                        <h4><span class="red">Client Project</span><br>2014 - 2015</h4>
+                        <p>Technology to help retailers get a magic understanding of their customers, empowered by mobile.</p>
                         <a href="case7.html">See more</a>
                     </div>
+
                     <div class="slick-img-wrap">
-                        <img style="height:auto" src="img/case8.png" alt="" width="100%">
+                        <h2>
+                            <img class="right" src="img/case8.0.png" alt="">Storific</h2>
+                        <h4><span class="red">Perspnal Startup</span><br>2009 - 2010</h4>
+                        <p>Smart service that enables customers to place orders at restaurants, cafes and bars.</p>
                         <a href="case8.html">See more</a>
                     </div>
                 </div>
@@ -210,9 +289,10 @@
             <a href="#principle" class="down-scroll">
                 <img class="arrow" src="img/arrow.png" alt="">
             </a>
-        </div>    
-        
-        
+        </div>
+
+
+
         <div class="principle" id="principle">
             <div class="sectionoffset">
                 <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Principle</h4>
@@ -245,7 +325,7 @@
                                 <p>Uvitae risus commodo tempus aliquet sit amet vitae nunc. Donec volutpat, enim quisom hendrer sagittis, arcu tellus cursus justo, quam.</p>
                             </td>
                         </tr>
-                        
+
                         <tr>
                             <td></td>
                             <td>
@@ -267,27 +347,46 @@
                             </td>
                         </tr>
                     </table>
+                    <a href="#action" class="down-scroll">
+                        <img class="arrow" src="img/arrow.png" alt="">
+                    </a>
+
+                    <div class="principle-less-768">
+                        <h2>We do <br>really care</h2>
+                        <p>Nullam faucibus, nibh a tincidunt tincidunt, ipsum dolor mattis eros, vel tincidunt nibh urna ac libero. Ut sit amet ex et justo fringilla.</p>
+
+                        <h2>We already<br>know</h2>
+                        <p>Uvitae risus commodo tempus aliquet sit amet vitae nunc. Donec volutpat, enim quisom hendrer sagittis, arcu tellus cursus justo, quam.</p>
+                        <h2>It isn’t just <br>about code</h2>
+                        <p>Nullam faucibus, nibh a tincidunt tincidunt, ipsum dolor mattis eros, vel tincidunt nibh urna ac libero. Ut sit amet ex et justo fringilla.</p>
+
+                        <h2>We solve actual issues</h2>
+                        <p>Pellentesque auctor qu arcu. In vitae mi placerat, vestibulu sem eget, sollicitudin lorem. Aenean laorporttitor, vel nus momento nales nunc.</p>
+                    </div>
+
+
 
                 </div>
             </div>
-            <a href="#action" class="down-scroll">
-                <img class="arrow" src="img/arrow.png" alt="">
-            </a>
-        </div><!--end of principle-->
-               
+        </div>
+        <!--end of principle-->
+
 
         <div class="action" id="action">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 cpl-md-offset-2 col-sm-8 col-sm-offset-4 col-xs-12">
                     <div class="row">
                         <div class="back">
 
                         </div>
 
-                        <div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5">
+                        <div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-xs-12">
                             <h1 class="title">Send request now</h1>
-                            <p>We take all requests with the same amount of care. Send us details of your project and we’ll get back to you in less than 48h working hours. It’s a promise!</p>
-                            <button class="request">Request</button>
+                            <div class="action-less-768">
+                                <p>We take all requests with the same amount of care. Send us details of your project and we’ll get back to you in less than 48h working hours. It’s a promise!</p>
+                                <button class="request">Request</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -296,14 +395,10 @@
         <!--end of action-->
 
 
-    <div class="footer-bg"></div>
+        <div class="footer-bg"></div>
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="copyright left">
-                        <p>© 2016 Factorly, Inc. All rights reserved.</p>
-                    </div>
-
                     <div class="social right">
                         <ul>
                             <li><a href="">Facebook</a></li>
@@ -311,20 +406,22 @@
                             <li><a href="">LinkedIn</a></li>
                         </ul>
                     </div>
+                    <div class="copyright left">
+                        <p>© 2016 Factorly, Inc. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
-
     </div>
     <!--end of .wrapper-->
 
+    <!--
     <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal" name="form">
             <div class="row">
                 My name is
-                    <input type="text" name="firstname" placeholder="Your name" class="input-name">
-                 and you can
+                <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can
                 <br> reach me at
                 <input type="email" name="email" placeholder="Your email" class="email"> or
                 <input class="input-phone" type="text" name="phone" placeholder="phone number">.
@@ -368,6 +465,69 @@
         </form>
     </div>
     <div id="overlay"></div>
+-->
+
+    <div id="modal_form">
+        <span id="modal_close"></span>
+
+
+        <form id="modal" name="form">
+            <div class="row-custom">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                        <div class="row">
+                            My name is
+                            <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can reach me at
+                            <input type="email" name="email" placeholder="Your email" class="email"> or
+                            <input class="input-phone" type="text" name="phone" placeholder="phone number">.
+                        </div>
+
+                        <div class="row">
+                            I`m looking for a partner for
+                            <select name="discipline" form="modal">
+                                <option selected="selected" class="default-select">Choose OS</option>
+                                <option>Android</option>
+                                <option>iOS</option>
+                                <option>TvOS</option>
+                                <option>WatchOS</option>
+                                <option>Other</option>
+                            </select>
+                            with a goal to complete that near
+                            <div id="datetimepicker1" class="input-append date">
+                                <input data-format="dd/MM/yyyy" type="text" name="date" placeholder="Your timeframe"></input>
+                                <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+                            </div>
+                            and want to stay around a budget of
+                            <select name="amount" form="modal">
+                                <option value="rough budget">rough amount</option>
+                                <option>&lt;10K€</option>
+                                <option>&lt;30K€</option>
+                                <option>&lt;50K€</option>
+                                <option>&gt;50K€</option>
+                            </select>.
+                        </div>
+                        <div class="row">
+                            My message is
+                            <input type="text" class="message" name="comment" placeholder="How can we help you?">.
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="send">Send</button>
+        </form>
+
+
+    </div>
+    <div id="overlay"></div>
+
+
 
 
 

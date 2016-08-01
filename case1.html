@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="cases-body">
 
     <div class="for-footer">
         <div class="case1 cases" id="case1">
@@ -31,7 +31,12 @@
                             <img src="img/logo.png" alt="" width="55px" height="55px">
                             <img src="img/Factorly.png" alt="" width="140px" height="33px">
                         </div>
-                        <div class="navigation right">
+
+                        <div id="touch-menu" class="right">
+                            <img src="img/touch-menu.png" alt="">
+                        </div>
+
+                        <div class="menu navigation right">
                             <ul>
                                 <li><a href="home.html">Home</a></li>
                                 <li><a href="expertize.html">Expertize</a></li>
@@ -40,6 +45,19 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
+
+
+                        <div class="menu-small">
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="expertize.html">Expertize</a></li>
+                                <li><a href="case1.html" class="active">Cases</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -47,23 +65,29 @@
             <div class="case">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div>
-                            <img style="height:auto" src="img/case1.png" alt="" width="100%">
+                        <div class="slick-img-wrap">
+                            <h2><img class="right" src="img/case1.0.png" alt="">Dine Market</h2>
+                            <h4><span class="red">Client Project</span><br>2014 - 2015</h4>
+                            <p>Easy online purchasing platform 
+that connects restaurants to all of their vendors without headache.</p>
                         </div>
                         <div class="pagingInfoBlock">
                             <p class="pagingInfo">Case 1 of 8</p>
                         </div>
-                        <a href="case8.html" class="slick-prev"></a>
-                        <a href="case2.html" class="slick-next"></a>
+                        <a href="case8.html" class="transition slick-prev"></a>
+                        <a href="case2.html" class="transition slick-next"></a>
                     </div>
                 </div>
                 <a href="#projects" class="down-scroll">
-                <span>project details</span>
-                <img class="arrow" src="img/arrow.png" alt="">
+                    <span>Explore project</span>
+                    <img class="arrow" src="img/arrow.png" alt="">
                 </a>
             </div>
 
             <div class="projects" id="projects">
+               <div class="sectionoffset">
+                    <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Project presentation</h4>
+                </div>
                 <div class="project">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -71,7 +95,7 @@
                                 <div class="back">
                                     <h1>Purchasing <br>platform</h1>
                                 </div>
-                                <div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-6 col-sm-offset-5">
+                                <div class="n-pad-r-l col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-6 col-sm-offset-5">
                                     <p class="projects-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ultricies nulla augue, id pretium nisl interdum et. Nam tristique turpis a blandit tristique. Curabitur posuere, elit in auctor tincidunt, lacus mauris fermentum quam, vel fringilla arcu tellus at nisl. Duis gravida ac elit eget porta.Vivamus eget imperdiet turpis. Etiam a nulla lacus. Cras et turpis consectetur, iaculis est sed, pellentesque sem.</p>
                                 </div>
                             </div>
@@ -79,22 +103,25 @@
                     </div>
 
                     <div class="screens row">
+                       <div class="sectionoffset">
+                            <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Screenshot</h4>
+                        </div>
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                             <div class="popup-gallery">
                                 <a href="img/cases/case1.1.png">
-                                    <div class="project-screen">
+                                    <div class="first-project project-screen">
                                         <img src="img/cases/case1.1.png" alt="">
                                     </div>
                                 </a>
 
                                 <a href="img/cases/case1.2.png">
-                                    <div class="project-screen">
+                                    <div class="second-project project-screen">
                                         <img src="img/cases/case1.2.png" alt="">
                                     </div>
                                 </a>
 
                                 <a href="img/cases/case1.3.png">
-                                    <div class="project-screen">
+                                    <div class="third-project project-screen">
                                         <img src="img/cases/case1.3.png" alt="">
                                     </div>
                                 </a>
@@ -115,19 +142,25 @@
                     </div>
 
                     <div class="product-details">
+                       <div class="sectionoffset">
+                            <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Our work</h4>
+                        </div>
                         <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <div class="n-pad-r-l col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5">
                                         <ul>
                                             <li>Product concept</li>
                                             <li>UI & UX guidance</li>
                                             <li>Graphic design</li>
-                                            <li>Front-end development</li>
+                                            <li>Front-end development</li><br>
                                         </ul>
                                     </div>
                                     <div class="col-lg-7 col-md-7">
                                         <p>Cras ac congue massa, ac molestie odio. Morbi eu molestie turpis. Curabitur vitae dignissim nisi, vitae venenatis odio. Donec a augue sed augue pulvinar pharetra. Nulla nec efficitur erat, a pulvinar risus. Mauris lacinia lectus vitae neque porttitor varius. Nullam porttitor placerat nisi at posuere. Quisque in lacus mollis turpis semper luctus. Mauris sit amet libero lectus. Pellentesque in odio tristique, porttitor massa nec, vestibulum velit. Aliquam ac sollicitudin libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus</p>
+                                        <div class="sectionoffset">
+                                            <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Customer testimonial</h4>
+                                        </div>
                                         <div class="quote">
                                             <img src="img/cases/quote.png" alt="">
                                             <p>
@@ -141,8 +174,8 @@
                                         <div class="pagingInfoBlock red">
                                             <p class="pagingInfo">Case 1 of 8</p>
                                         </div>
-                                        <a href="case8.html" class="slick-prev red"></a>
-                                        <a href="case2.html" class="slick-next red"></a>
+                                        <a href="case8.html" class="transition slick-prev red"></a>
+                                        <a href="case2.html" class="transition slick-next red"></a>
                                     </div>
                                 </div>
                             </div>
@@ -163,10 +196,6 @@
         <footer class="cases-footer">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="copyright left">
-                        <p>© 2016 Factorly, Inc. All rights reserved.</p>
-                    </div>
-                    <button class="request">Send Request</button>
                     <div class="social right">
                         <ul>
                             <li><a href="">Facebook</a></li>
@@ -174,19 +203,25 @@
                             <li><a href="">LinkedIn</a></li>
                         </ul>
                     </div>
+                    <div class="cases-button">
+                        <button class="request">
+                            Send Request</button>
+                    </div>
+                    <div class="copyright left">
+                        <p>© 2016 Factorly, Inc. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
 
 
-        <div id="modal_form">
+    <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal" name="form">
             <div class="row">
                 My name is
-                    <input type="text" name="firstname" placeholder="Your name" class="input-name">
-                 and you can
+                <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can
                 <br> reach me at
                 <input type="email" name="email" placeholder="Your email" class="email"> or
                 <input class="input-phone" type="text" name="phone" placeholder="phone number">.
