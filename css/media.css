@@ -925,6 +925,10 @@
     .ambiance .back img {
         margin-top: 0;
     }
+    footer,
+    .contact footer {
+        height: 90px;
+    }
 }
 
 @media (max-width: 360px) {
