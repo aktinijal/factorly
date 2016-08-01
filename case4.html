@@ -15,7 +15,7 @@
     <link type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link type="text/css" href="css/media.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
     <link rel="stylesheet" href="magnificPopup/dist/magnific-popup.css">
 
 </head>
@@ -55,10 +55,11 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
+                        <div class="menu-back"></div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="case">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -81,7 +82,7 @@
                 </a>
             </div>
 
-           
+
             <div class="projects" id="projects">
                 <div class="sectionoffset">
                     <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Project presentation</h4>
@@ -207,48 +208,50 @@
     <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal" name="form">
-            <div class="row">
-                My name is
-                <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can
-                <br> reach me at
-                <input type="email" name="email" placeholder="Your email" class="email"> or
-                <input class="input-phone" type="text" name="phone" placeholder="phone number">.
-            </div>
+            <div class="row-custom">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                        <div class="row">
+                            My name is
+                            <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can reach me at
+                            <input type="email" name="email" placeholder="Your email" class="email"> or
+                            <input class="input-phone" type="text" name="phone" placeholder="phone number">.
+                        </div>
 
-            <div class="row">
-                I`m looking for a partner for
-                <select name="discipline" form="modal">
-                    <option selected="selected" class="default-select">Choose OS</option>
-                    <option>Android</option>
-                    <option>iOS</option>
-                    <option>TvOS</option>
-                    <option>WatchOS</option>
-                    <option>Other</option>
-                </select>
-                with a goal to
-                <br> complete that near
-                <div id="datetimepicker1" class="input-append date">
-                    <input data-format="dd/MM/yyyy" type="text" name="date" placeholder="Your timeframe"></input>
-                    <span class="add-on">
+                        <div class="row">
+                            I`m looking for a partner for
+                            <select name="discipline" form="modal">
+                                <option selected="selected" class="default-select">Choose OS</option>
+                                <option>Android</option>
+                                <option>iOS</option>
+                                <option>TvOS</option>
+                                <option>WatchOS</option>
+                                <option>Other</option>
+                            </select>
+                            with a goal to complete that near
+                            <div id="datetimepicker1" class="input-append date">
+                                <input data-format="dd/MM/yyyy" type="text" name="date" placeholder="Your timeframe"></input>
+                                <span class="add-on">
       <i data-time-icon="icon-time" data-date-icon="icon-calendar">
       </i>
     </span>
+                            </div>
+                            and want to stay around a budget of
+                            <select name="amount" form="modal">
+                                <option value="rough budget">rough amount</option>
+                                <option>&lt;10K€</option>
+                                <option>&lt;30K€</option>
+                                <option>&lt;50K€</option>
+                                <option>&gt;50K€</option>
+                            </select>.
+                        </div>
+                        <div class="row">
+                            My message is
+                            <input type="text" class="message" name="comment" placeholder="How can we help you?">.
+                        </div>
+                    </div>
                 </div>
-                and want to
-                <br> stay around a budget of
-                <select name="amount" form="modal">
-                    <option value="rough budget">rough amount</option>
-                    <option>&lt;10K€</option>
-                    <option>&lt;30K€</option>
-                    <option>&lt;50K€</option>
-                    <option>&gt;50K€</option>
-                </select>.
             </div>
-            <div class="row">
-                My message is
-                <input type="text" class="message" name="comment" placeholder="How can we help you?">.
-            </div>
-
             <button type="submit" class="send">Send</button>
         </form>
     </div>

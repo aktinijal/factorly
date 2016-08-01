@@ -55,6 +55,7 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
+                        <div class="menu-back"></div>
 
 
                     </div>
@@ -66,8 +67,7 @@
                         <div class="slick-img-wrap">
                             <h2><img class="right" src="img/case6.0.png" alt="">Amparcat</h2>
                             <h4><span class="red">Personal Startup</span><br>2015 - 2016</h4>
-                            <p>The most simple & smart 
-mobile application for paying the parking in Romania.</p>
+                            <p>The most simple & smart mobile application for paying the parking in Romania.</p>
                         </div>
 
                         <div class="pagingInfoBlock">
@@ -78,13 +78,13 @@ mobile application for paying the parking in Romania.</p>
                     </div>
                 </div>
                 <a href="#projects" class="down-scroll">
-                <span>Explore project</span>
-                <img class="arrow" src="img/arrow.png" alt="">
+                    <span>Explore project</span>
+                    <img class="arrow" src="img/arrow.png" alt="">
                 </a>
             </div>
 
             <div class="projects" id="projects">
-               <div class="sectionoffset">
+                <div class="sectionoffset">
                     <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Project presentation</h4>
                 </div>
                 <div class="project">
@@ -101,7 +101,7 @@ mobile application for paying the parking in Romania.</p>
                         </div>
                     </div>
                     <div class="screens row">
-                       <div class="sectionoffset">
+                        <div class="sectionoffset">
                             <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Screenshot</h4>
                         </div>
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
@@ -138,7 +138,7 @@ mobile application for paying the parking in Romania.</p>
                         </div>
                     </div>
                     <div class="product-details">
-                       <div class="sectionoffset">
+                        <div class="sectionoffset">
                             <h4 class="sectionName"><img src="img/sectionNameLine.png" alt="">Our work</h4>
                         </div>
                         <div class="row">
@@ -149,7 +149,8 @@ mobile application for paying the parking in Romania.</p>
                                             <li>Product concept</li>
                                             <li>UI & UX guidance</li>
                                             <li>Graphic design</li>
-                                            <li>Front-end development</li><br>
+                                            <li>Front-end development</li>
+                                            <br>
                                         </ul>
                                     </div>
                                     <div class="col-lg-7 col-md-7">
@@ -164,7 +165,7 @@ mobile application for paying the parking in Romania.</p>
                                             <h5 class="position">CEO of Visor</h5>
                                         </div>
 -->
-                                    <div class="pagingInfoBlock red">
+                                        <div class="pagingInfoBlock red">
                                             <p class="pagingInfo">Case 6 of 8</p>
                                         </div>
                                         <a href="case5.html" class="transition slick-prev red"></a>
@@ -202,52 +203,53 @@ mobile application for paying the parking in Romania.</p>
     </div>
 
 
-        <div id="modal_form">
+    <div id="modal_form">
         <span id="modal_close"></span>
         <form id="modal" name="form">
-            <div class="row">
-                My name is
-                    <input type="text" name="firstname" placeholder="Your name" class="input-name">
-                 and you can
-                <br> reach me at
-                <input type="email" name="email" placeholder="Your email" class="email"> or
-                <input class="input-phone" type="text" name="phone" placeholder="phone number">.
-            </div>
+            <div class="row-custom">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                        <div class="row">
+                            My name is
+                            <input type="text" name="firstname" placeholder="Your name" class="input-name"> and you can reach me at
+                            <input type="email" name="email" placeholder="Your email" class="email"> or
+                            <input class="input-phone" type="text" name="phone" placeholder="phone number">.
+                        </div>
 
-            <div class="row">
-                I`m looking for a partner for
-                <select name="discipline" form="modal">
-                    <option selected="selected" class="default-select">Choose OS</option>
-                    <option>Android</option>
-                    <option>iOS</option>
-                    <option>TvOS</option>
-                    <option>WatchOS</option>
-                    <option>Other</option>
-                </select>
-                with a goal to
-                <br> complete that near
-                <div id="datetimepicker1" class="input-append date">
-                    <input data-format="dd/MM/yyyy" type="text" name="date" placeholder="Your timeframe"></input>
-                    <span class="add-on">
+                        <div class="row">
+                            I`m looking for a partner for
+                            <select name="discipline" form="modal">
+                                <option selected="selected" class="default-select">Choose OS</option>
+                                <option>Android</option>
+                                <option>iOS</option>
+                                <option>TvOS</option>
+                                <option>WatchOS</option>
+                                <option>Other</option>
+                            </select>
+                            with a goal to complete that near
+                            <div id="datetimepicker1" class="input-append date">
+                                <input data-format="dd/MM/yyyy" type="text" name="date" placeholder="Your timeframe"></input>
+                                <span class="add-on">
       <i data-time-icon="icon-time" data-date-icon="icon-calendar">
       </i>
     </span>
+                            </div>
+                            and want to stay around a budget of
+                            <select name="amount" form="modal">
+                                <option value="rough budget">rough amount</option>
+                                <option>&lt;10K€</option>
+                                <option>&lt;30K€</option>
+                                <option>&lt;50K€</option>
+                                <option>&gt;50K€</option>
+                            </select>.
+                        </div>
+                        <div class="row">
+                            My message is
+                            <input type="text" class="message" name="comment" placeholder="How can we help you?">.
+                        </div>
+                    </div>
                 </div>
-                and want to
-                <br> stay around a budget of
-                <select name="amount" form="modal">
-                    <option value="rough budget">rough amount</option>
-                    <option>&lt;10K€</option>
-                    <option>&lt;30K€</option>
-                    <option>&lt;50K€</option>
-                    <option>&gt;50K€</option>
-                </select>.
             </div>
-            <div class="row">
-                My message is
-                <input type="text" class="message" name="comment" placeholder="How can we help you?">.
-            </div>
-
             <button type="submit" class="send">Send</button>
         </form>
     </div>
