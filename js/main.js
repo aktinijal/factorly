@@ -35,9 +35,6 @@ $(document).ready(function () {
 
     }
 
-    //        setSectionHeight();
-    //        $(window).resize(setSectionHeight);
-
     var width = $(document).width();
     if (width > 768) {
         setSectionHeight();

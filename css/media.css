@@ -943,10 +943,6 @@
     .cases .slick-img-wrap {
         padding: 50px 25px 30%;
     }
-    footer,
-    .contact footer {
-        height: 90px;
-    }
 }
 
 @media (max-width: 320px) {
@@ -983,5 +979,9 @@
     }
     .cases .arrow {
         bottom: -70px;
+    }
+    footer,
+    .contact footer {
+        height: 90px;
     }
 }
