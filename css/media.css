@@ -168,7 +168,7 @@
         height: 135px;
     }
     footer .request {
-        margin-top: 0;
+        margin-top: -20px;
     }
     /**************************CASE******************/
     .cases .back {
@@ -192,16 +192,6 @@
     .cases-slick .slick-next.red {
         height: 25px;
         background-size: 75%;
-    }
-    footer.cases-footer {
-        position: absolute;
-        bottom: 0;
-        background-color: #f0f0f0;
-        text-align: center;
-        width: 100%;
-        height: 180px;
-        line-height: 80px;
-        padding: 50px 40px;
     }
     /**************************about.html******************/
     .about {
@@ -379,10 +369,6 @@
         background-size: 15%;
     }
     /**************cases.html***************/
-    footer.cases-footer {
-        height: 135px;
-        line-height: 35px;
-    }
     footer .request {
         line-height: 60px;
     }
@@ -452,19 +438,22 @@
         height: 536px;
     }
     /**************cases.html***************/
+    .together {
+        width: 19%;
+    }
     .basilic,
     .tomato {
-        right: -2.5%;
+        right: 0;
     }
     .back-buttons {
-        right: -10px;
+        right: 0;
     }
     .quote img {
         width: 15%;
     }
     footer,
     .contact footer {
-        height: 90px;
+        height: 110px;
         padding: 0;
         text-align: center;
     }
@@ -472,7 +461,8 @@
         margin-bottom: 10px;
         float: none;
     }
-    .copyright {
+    footer .copyright {
+        margin-bottom: 30px;
         float: none;
     }
     .copyright p {
@@ -520,16 +510,16 @@
     .fifth {
         display: none;
     }
+    .project-screen {
+        margin-right: 2%;
+    }
     .cases-button {
         position: absolute;
-        width: 100%;
-        display: block;
+        right: 0;
+        left: 0;
         top: -150px;
-    }
-    footer.cases-footer {
-        padding: 0;
-        height: 80px;
-        line-height: 35px;
+        display: block;
+        width: 100%;
     }
     .case1,
     .case2,
@@ -727,10 +717,8 @@
         margin-bottom: 30px;
     }
     div.plus {
-        margin-top: 5px;
-        margin-left: 15px;
-        padding-top: 1px;
-        padding-left: 10px;
+        margin: 35px 0 0 15px;
+        padding: 3% 0 0 4%;
     }
     .factorly {
         top: 1080px;
@@ -792,6 +780,12 @@
     }
     .second-project {
         margin: 0 1% 35px 4%;
+    }
+    .case3 .third-project {
+        margin-right: 5%;
+    }
+    .together {
+        width: 25%;
     }
     .basilic {
         right: 35%;
@@ -918,6 +912,10 @@
     .slick-img-wrap img {
         width: 40%;
     }
+    .factorly {
+        width: 35%;
+        top: 1140px;
+    }
 }
 
 @media (max-width: 414px) {
@@ -949,8 +947,7 @@
 
 @media (max-width: 320px) {
     .action button.request {
-        margin-bottom: 25px;
-        margin-top: 20px;
+        margin: 20px 0 25px;
     }
     .action {
         margin-top: 20px;
@@ -964,11 +961,17 @@
         background-color: #cfdee8;
         background-size: cover;
     }
-    .social a {
-        font: 12px/35px LarsseitMedium;
-    }
+    .social li,
     .copyright p {
-        font: 12px/30px LarsseitMedium;
+        height: 24px;
+    }
+    .social a,
+    .cases .social a {
+        font: 14px/24px LarsseitMedium;
+    }
+    .copyright p,
+    .cases .copyright p {
+        font: 10px/24px LarsseitMedium;
     }
     /********cases.html*********/
     .down-scroll span {

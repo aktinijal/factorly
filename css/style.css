@@ -740,7 +740,7 @@ p.less-768 {
 /**********************Footer***********************/
 
 footer {
-    height: 200px;
+    height: 164px;
     padding: 50px 90px;
 }
 
@@ -1148,15 +1148,12 @@ footer .request {
 
 .contacts .request {
     margin-top: 45px;
-    /*    margin-top: 0;*/
 }
 
 .contact footer {
     position: absolute;
     bottom: 0;
-    height: 164px;
     width: 100%;
-    padding: 50px 90px;
 }
 
 
