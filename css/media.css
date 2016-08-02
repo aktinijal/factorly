@@ -713,6 +713,9 @@
         background-size: cover;
     }
     /**************about.html***************/
+    .face {
+        height: 380px;
+    }
     .zoom-face {
         margin-bottom: 30px;
     }
@@ -912,9 +915,15 @@
     .slick-img-wrap img {
         width: 40%;
     }
+    div.plus {
+        margin: 0 0 0 15px;
+    }
+    .face {
+        height: 245px;
+    }
     .factorly {
-        width: 35%;
-        top: 1140px;
+        width: 45%;
+        top: 800px;
     }
 }
 
