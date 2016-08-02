@@ -451,9 +451,13 @@
     .quote img {
         width: 15%;
     }
-    footer,
-    .contact footer {
+    footer {
         height: 110px;
+        padding: 0;
+        text-align: center;
+    }
+    .contact footer {
+        height: 90px;
         padding: 0;
         text-align: center;
     }
@@ -467,6 +471,16 @@
     }
     .copyright p {
         margin-right: 0;
+    }
+    .contact .social li,
+    .contact .copyright p {
+        height: 20px;
+    }
+    .contact .social a {
+        font: 14px/14px LarsseitMedium;
+    }
+    .contact .copyright p {
+        font-size: 10px;
     }
     /**********about.html************/
     .faces h4.sectionName {
@@ -735,6 +749,9 @@
         text-align: center;
         text-align: -webkit-center;
     }
+    .contacts p {
+        text-align: left;
+    }
     .clock {
         margin-left: 0;
         margin-bottom: 20px;
@@ -841,6 +858,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    .contacts p {
+        padding-left: 40%;
+    }
+}
+
 @media (min-height: 768px) {
     .expertize,
     .principle {
@@ -872,6 +895,12 @@
     }
 }
 
+@media (max-width: 650px) {
+    .contacts p {
+        padding-left: 38%;
+    }
+}
+
 @media (max-width: 590px) {
     .hero br {
         display: none;
@@ -900,6 +929,21 @@
     .action {
         margin-top: 60px;
     }
+    .contacts p {
+        padding-left: 36%;
+    }
+    .contact {
+        background: url(../img/contact/background320.png) no-repeat right center;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts p {
+        padding-left: 34%;
+    }
 }
 
 @media (max-width: 435px) {
@@ -925,6 +969,9 @@
         width: 45%;
         top: 800px;
     }
+    .contacts {
+        top: 70px;
+    }
 }
 
 @media (max-width: 414px) {
@@ -933,6 +980,9 @@
     }
     .ambiance .back img {
         margin-top: 0;
+    }
+    .contacts p {
+        padding-left: 30%;
     }
 }
 
@@ -951,6 +1001,9 @@
     }
     .cases .slick-img-wrap {
         padding: 50px 25px 30%;
+    }
+    .contacts p {
+        padding-left: 25%;
     }
 }
 
