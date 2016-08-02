@@ -549,7 +549,7 @@
 
 @media (max-width: 768px) {
     .arrow {
-        right: 47%;
+        right: 48%;
     }
     button.request {
         width: 115px;
@@ -613,12 +613,25 @@
     .hero {
         padding-top: 20px;
     }
-    .hero button.request {
+    .hero button.more-768 {
+        display: none;
+    }
+    .hero-button {
         display: block;
-        margin: 70% auto 10px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: auto;
+        bottom: 35px;
+        display: block;
+        width: 100%;
+    }
+    .hero button.less-768 {
+        display: block;
+        margin: 0 auto 30px;
     }
     .arrow {
-        width: 4.5%;
+        width: 4%;
     }
     .back {
         position: static;
@@ -853,9 +866,6 @@
     .slick-next.red {
         right: 25px;
     }
-    .cases-footer button.request {
-        right: 40%;
-    }
     footer.cases-footer {
         background-color: transparent;
     }
@@ -864,6 +874,9 @@
 @media (max-width: 767px) {
     .contacts p {
         padding-left: 40%;
+    }
+    .hero button.less-768 {
+        margin: 0 auto 10px;
     }
 }
 
@@ -926,9 +939,6 @@
     h4.sectionName {
         font-size: 18px;
     }
-    .cases-footer button.request {
-        right: 42%;
-    }
     .action {
         margin-top: 60px;
     }
@@ -953,9 +963,6 @@
     .phone-wrapper {
         top: 10%;
     }
-    .hero button.request {
-        margin: 90% auto 10px;
-    }
     .slick-img-wrap h2 {
         font: 200.8% LarsseitMedium;
     }
@@ -978,9 +985,6 @@
 }
 
 @media (max-width: 414px) {
-    .hero button.request {
-        margin: 80% auto 10px;
-    }
     .ambiance .back img {
         margin-top: 0;
     }
@@ -990,9 +994,6 @@
 }
 
 @media (max-width: 360px) {
-    .hero button.request {
-        margin: 70% auto 20px;
-    }
     .slick-img-wrap {
         padding: 50px 25px 100px;
     }

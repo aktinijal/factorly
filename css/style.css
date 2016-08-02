@@ -497,7 +497,9 @@ h2 {
     position: relative;
     padding-top: 140px;
 }
-
+.hero-button {
+    display: none;
+}
 .hero p {
     color: #1f2124;
 }
