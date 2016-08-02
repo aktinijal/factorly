@@ -856,6 +856,9 @@
     .cases-footer button.request {
         right: 40%;
     }
+    footer.cases-footer {
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 767px) {
@@ -937,9 +940,6 @@
         -webkit-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }
-    footer.cases-footer {
-        background-color: transparent;
     }
 }
 
