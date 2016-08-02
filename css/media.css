@@ -938,6 +938,9 @@
         -o-background-size: cover;
         background-size: cover;
     }
+    footer.cases-footer {
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 500px) {
