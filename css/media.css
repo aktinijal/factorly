@@ -951,6 +951,9 @@
         -o-background-size: cover;
         background-size: cover;
     }
+    .contacts {
+        top: 70px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -979,9 +982,6 @@
         width: 45%;
         top: 800px;
     }
-    .contacts {
-        top: 70px;
-    }
 }
 
 @media (max-width: 414px) {
@@ -1008,6 +1008,15 @@
     }
     .contacts p {
         padding-left: 25%;
+    }
+}
+
+@media (max-height: 500px) {
+    .contact footer .copyright {
+        margin-bottom: 0;
+    }
+    .contact footer {
+        height: 70px;
     }
 }
 
