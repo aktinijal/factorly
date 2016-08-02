@@ -611,7 +611,7 @@
         left: 25%;
     }
     .hero {
-        padding-top: 20px;
+        padding-top: 0;
     }
     .hero button.more-768 {
         display: none;
@@ -961,7 +961,7 @@
 
 @media (max-width: 435px) {
     .phone-wrapper {
-        top: 10%;
+        top: 9%;
     }
     .slick-img-wrap h2 {
         font: 200.8% LarsseitMedium;
