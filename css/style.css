@@ -716,6 +716,7 @@ p.less-768 {
     position: absolute;
     right: 205px;
     bottom: -136px;
+    z-index: 100;
 }
 
 

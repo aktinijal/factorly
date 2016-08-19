@@ -363,8 +363,4 @@ $(document).ready(function () {
 
     });
 
-
-
-
-
 });
