@@ -960,6 +960,11 @@
     .contacts p {
         padding-left: 34%;
     }
+    select, 
+    textarea, 
+    input { 
+        font-size: 16px !important; 
+    }
 }
 
 @media (max-width: 435px) {
@@ -1058,5 +1063,8 @@
     footer,
     .contact footer {
         height: 90px;
+    }
+    .bootstrap-datetimepicker-widget {
+        width: 70%;
     }
 }

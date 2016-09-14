@@ -170,6 +170,11 @@
 #modal_form option {
     color: #111;
 }
+input ,textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0; 
+    border-radius: 0;
+}
 
 ::-webkit-select-placeholder {
     font-family: LarsseitMedium;
@@ -415,7 +420,7 @@ h2 {
 
 .logo img:last-child {
     margin-left: 25px;
-    vertical-align: super;
+    vertical-align: baseline;
 }
 
 
@@ -686,6 +691,7 @@ p.less-768 {
     border: none;
     background-color: transparent;
     color: transparent;
+    z-index: 20;
 }
 
 .slick-prev {
@@ -888,14 +894,6 @@ div.ambianceSmall:first-child,
 
 .cases .slick-img-wrap {
     padding: 80px 110px 20%;
-}
-
-.cases .logo img {
-    float: left;
-}
-
-.cases .logo img:last-child {
-    margin-top: 10px;
 }
 
 .cases .arrow {
