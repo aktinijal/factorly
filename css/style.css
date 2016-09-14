@@ -69,7 +69,9 @@
 
 
 /*************************MODAL*************************/
-
+body.modal-open {
+    overflow: hidden;
+}
 .bootstrap-datetimepicker-widget {
     width: 550px;
 }
@@ -170,7 +172,7 @@
 #modal_form option {
     color: #111;
 }
-input ,textarea {
+input ,textarea, select {
     -webkit-appearance: none;
     -webkit-border-radius: 0; 
     border-radius: 0;
@@ -178,14 +180,14 @@ input ,textarea {
 
 ::-webkit-select-placeholder {
     font-family: LarsseitMedium;
-    font-size: 85%;
+    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
 
 ::-webkit-input-placeholder {
     font-family: LarsseitMedium;
-    font-size: 85%;
+    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -193,7 +195,7 @@ input ,textarea {
 :-moz-placeholder {
     /* Firefox 18- */
     font-family: LarsseitMedium;
-    font-size: 85%;
+    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -201,14 +203,14 @@ input ,textarea {
 ::-moz-placeholder {
     /* Firefox 19+ */
     font-family: LarsseitMedium;
-    font-size: 85%;
+    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
 
 :-ms-input-placeholder {
     font-family: LarsseitMedium;
-    font-size: 85%;
+    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -1145,6 +1147,9 @@ footer .request {
 
 .contacts p {
     margin-bottom: 45px;
+}
+.contacts a {
+    color: #000;
 }
 
 .contacts .request {

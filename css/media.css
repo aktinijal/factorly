@@ -965,6 +965,10 @@
     input { 
         font-size: 16px !important; 
     }
+    #modal_form .input-phone,
+    #modal_form select[name="amount"] {
+        width: 60%;
+    }
 }
 
 @media (max-width: 435px) {
@@ -1063,6 +1067,10 @@
     footer,
     .contact footer {
         height: 90px;
+    }
+
+    #modal .row-custom {
+        width: 100%;
     }
     .bootstrap-datetimepicker-widget {
         width: 70%;

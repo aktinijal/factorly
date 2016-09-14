@@ -90,6 +90,7 @@ $(document).ready(function () {
 
     /********************Modal***************************/
     $('.request').click(function () {
+        $('body').addClass('modal-open');
 
         $('#overlay')
             .css('display', 'block')
@@ -112,6 +113,7 @@ $(document).ready(function () {
     });
 
     $('#modal_close').click(function () {
+        $('body').removeClass('modal-open');
         $('#modal_form')
             .removeClass('open')
             .animate({
@@ -301,6 +303,10 @@ $(document).ready(function () {
     $(function () {
         $('#datetimepicker1').datetimepicker({
             language: 'pt-BR'
+        });
+
+        $('#datetimepicker1').on('changeDate', function(ev){
+            $(this).datetimepicker('hide');
         });
     });
 
