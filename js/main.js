@@ -136,57 +136,28 @@ $(document).ready(function () {
                 duration: 100
             });
     });
-$(function() {
-
-    var txt = $('#comments'),
-    hiddenDiv = $(document.createElement('div')),
-    content = null;
     
-    txt.addClass('noscroll');
-    hiddenDiv.addClass('hiddendiv');
+    $(function() {
 
-    $('body').append(hiddenDiv);
+        var txt = $('#comments'),
+        hiddenDiv = $(document.createElement('div')),
+        content = null;
 
-    txt.bind('keyup', function() {
+        txt.addClass('noscroll');
+        hiddenDiv.addClass('hiddendiv');
 
-        content = txt.val();
-        content = content.replace(/\n/g, '<br>');
-        hiddenDiv.html(content);
+        $('body').append(hiddenDiv);
 
-        txt.css('height', hiddenDiv.height());
+        txt.bind('keyup', function() {
+
+            content = txt.val();
+            content = content.replace(/\n/g, '<br>');
+            hiddenDiv.html(content);
+
+            txt.css('height', hiddenDiv.height());
+        });
     });
-});
-
-    // var textarea = $('#comments'),
-    // hiddenSpan = $(document.createElement('span')),
-    // content = null,
-    // textareaRows = 1;
-
-    // textarea.addClass('noscroll');
-    // hiddenSpan.addClass('hiddenspan');
-
-    // $('body').append(hiddenSpan);
-
-    // textarea.bind('keyup', function() {
-    //     content = textarea.val();
-    //     // content = content.replace(/\n/g, '<br>');
-    //     hiddenSpan.html(content);
-    //     console.log(textarea.val().split('').length*9);
-    //     console.log(textarea.width());
-    //     if ((textarea.val().split('').length * 9) > textarea.width()){
-    //         debugger;
-    //         textareaRows = textarea.attr('rows');
-    //         textarea.attr('rows', textareaRows + 1);
-    //     }
-    //     console.log(hiddenSpan.width());
-    //     // textarea.css('height', hiddenSpan.height());
-    // });
-    // textarea.keypress(function() {
-
-    // });
-
-    
-
+ 
     /********************Slick************************/
     var $status = $('.pagingInfo');
     var $slickElement = $('.cases-slick');
