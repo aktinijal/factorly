@@ -38,6 +38,17 @@
         width: 175px;
         height: 75px;
     }
+    textarea {
+        min-height: 51px;
+        height: 51px;
+        font-size: 28px;
+        line-height: 51px;
+    }
+    .hiddendiv {
+        min-height: 51px;
+        font-size: 28px;
+        line-height: 51px;
+    }
     /********************************************/
     .phone-wrapper {
         top: 3%;
@@ -253,12 +264,21 @@
     h2 {
         margin-top: 35px;
     }
-    #modal_form {
-        /*        padding: 100px 50px 50px 100px;*/
-    }
     #modal_form .row {
-        /*        font-size: 140%;*/
         margin-top: 20px;
+    }
+    textarea {
+        width: 500px;
+        min-height: 45px;
+        height: 45px;
+        font-size: 24px;
+        line-height: 45px;
+    }
+    .hiddendiv {
+        width: 500px;
+        min-height: 45px;
+        font-size: 24px;
+        line-height: 45px;
     }
     .first-triangle {
         position: absolute;
@@ -333,14 +353,18 @@
         height: 33px;
     }
     textarea {
-        width: 500px;
-        font-size: 16px;
-        line-height: 24px;
+        margin-bottom: -10px;
+        width: 400px;
+        min-height: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
     }
     .hiddendiv {
-        font-size: 16px;
-        line-height: 24px;
-        width: 500px;
+        width: 400px;
+        min-height: 30px;
+        font-size: 15px;
+        line-height: 30px;
     }
     /**************home.html***************/
     .arrow {
@@ -573,11 +597,11 @@
         line-height: 50px;
     }
     #modal_form {
-        font-size: 18px;
-        padding-top: 7%;
+        padding-top: 25px;
     }
     #modal_form .row {
-        line-height: 30px;
+        line-height: 25px;
+        font-size: 16px;
     }
     input,
     select {
@@ -993,11 +1017,17 @@
     select[name="amount"] {
         width: 60%;
     }
-    .message {
-        /*width: 97%;*/
-    }
     textarea {
         width: 250px;
+        min-height: 20px;
+        height: 20px;
+        /*font-size: 28px;*/
+        /*line-height: 51px;*/
+    }
+    .hiddendiv {
+        min-height: 20px;
+        /*font-size: 28px;*/
+        /*line-height: 51px;*/
     }
 }
 
@@ -1107,6 +1137,10 @@
 
     #modal .row-custom {
         width: 100%;
+    }
+    #modal_form .row {
+        line-height: 20px;
+        font-size: 14px;
     }
     #modal_form button[type="submit"] {
         height: 30px;

@@ -148,28 +148,40 @@ select, textarea {
 
 
 textarea {
+    margin-bottom: -20px;
+    width: 800px;
+    min-height: 84px;
+    height: 84px;
+    background-color: transparent;
+    border: none;
+    font-size: 44px;
+    line-height: 84px;
+    padding: 0;
+    border-bottom: 2px solid #fff;
+    resize: none;
+}
+/*textarea {
     width: 600px;
     min-height: 36px;
-    /*height: 30px;*/
+    height: 30px;
     background-color: transparent;
     border: none;
     font-size: 28px;
     line-height: 32px;
     padding: 0;
     border-bottom: 2px solid #fff;
-    resize: none;
-}
+    }*/
 .noscroll {
     overflow: hidden;
 }
 .hiddendiv {
     display: none;
     white-space: pre-wrap;
-    width: 600px;
-    min-height: 36px;
+    width: 800px;
+    min-height: 84px;
     padding: 5px;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 44px;
+    line-height: 84px;
     /*line-height: 184.6%;*/
     word-wrap: break-word;
 }

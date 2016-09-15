@@ -12,7 +12,6 @@ $(document).ready(function () {
         $('.expertize').height(height);
         $('.home .case').height(height);
         $('.principle').height(height);
-
         $('.tempor').height(5 * height);
 
     }
@@ -138,7 +137,6 @@ $(document).ready(function () {
     });
     
     $(function() {
-
         var txt = $('#comments'),
         hiddenDiv = $(document.createElement('div')),
         content = null;
@@ -151,7 +149,7 @@ $(document).ready(function () {
         txt.bind('keyup', function() {
 
             content = txt.val();
-            content = content.replace(/\n/g, '<br>');
+            // content = content.replace(/\n/g, '<br>');
             hiddenDiv.html(content);
 
             txt.css('height', hiddenDiv.height());
