@@ -136,8 +136,8 @@ body.modal-open {
     margin-top: 0;
 }
 
-#modal_form input,
-#modal_form select {
+input,
+select, textarea {
     background-color: transparent;
     border: none;
     font-size: 85%;
@@ -146,30 +146,87 @@ body.modal-open {
     border-bottom: 2px solid #fff;
 }
 
-#modal_form #datetimepicker1 input {
+
+textarea {
+    width: 600px;
+    min-height: 36px;
+    /*height: 30px;*/
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0;
+    border-bottom: 2px solid #fff;
+    resize: none;
+}
+.noscroll {
+    overflow: hidden;
+}
+.hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    width: 600px;
+    min-height: 36px;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 32px;
+    /*line-height: 184.6%;*/
+    word-wrap: break-word;
+}
+
+/*textarea {
+    width: 100%;
+    min-height: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 2px solid #fff;
+    resize: none;
+}
+.noscroll {
+    overflow: hidden;
+}
+.hiddenspan {
+    display: none;
+    visibility: hidden;
+    z-index: 1000;
+    position: absolute;
+    white-space: pre;
+    /*width: 100%;*/
+    padding: 0;
+    font-size: 18px;
+    line-height: 16px;
+    word-wrap: break-word;
+}*/
+
+
+
+
+#datetimepicker1 input {
     width: 98%;
 }
-
-#modal_form .message {
-    width: 70%;
+.message {
+    /*width: 70%;*/
 }
 
-#modal_form input[name="phone"],
-#modal_form input[name="date"],
-#modal_form select,
-#modal_form input[name="message"] {
+input[name="phone"],
+input[name="date"],
+select,
+input[name="message"] {
     font-family: LarsseitMedium;
     font-size: 85%;
     color: #111;
     border-bottom-color: #fff;
 }
 
-#modal_form select {
+select {
     color: #fff;
-    font-size: 70%;
+    font-size: 85%;
 }
 
-#modal_form option {
+option {
     color: #111;
 }
 input ,textarea, select {
@@ -180,14 +237,12 @@ input ,textarea, select {
 
 ::-webkit-select-placeholder {
     font-family: LarsseitMedium;
-    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
 
 ::-webkit-input-placeholder {
     font-family: LarsseitMedium;
-    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -195,7 +250,6 @@ input ,textarea, select {
 :-moz-placeholder {
     /* Firefox 18- */
     font-family: LarsseitMedium;
-    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -203,14 +257,12 @@ input ,textarea, select {
 ::-moz-placeholder {
     /* Firefox 19+ */
     font-family: LarsseitMedium;
-    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
 
 :-ms-input-placeholder {
     font-family: LarsseitMedium;
-    /*font-size: 85%;*/
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -886,7 +938,19 @@ div.ambianceSmall:first-child,
 .action {
     margin-top: 600px;
 }
-
+.zoom-photo:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+.fluently {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 
 /*********************Case.html********************/
 

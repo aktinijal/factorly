@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('.first-triangle').animate({
         top: 0
     }, 800);
-
+    
     $('.second-triangle').animate({
         top: 250
     }, 800, function () {

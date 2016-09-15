@@ -332,6 +332,16 @@
     .input-prepend.date .add-on i {
         height: 33px;
     }
+    textarea {
+        width: 500px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .hiddendiv {
+        font-size: 16px;
+        line-height: 24px;
+        width: 500px;
+    }
     /**************home.html***************/
     .arrow {
         width: 2%;
@@ -397,6 +407,12 @@
         height: 15px;
         top: 20px;
         right: 20px;
+    }
+    textarea {
+        width: 400px;
+    }
+    .hiddendiv {
+        width: 400px;
     }
     .slick-img-wrap {
         position: relative;
@@ -557,13 +573,14 @@
         line-height: 50px;
     }
     #modal_form {
+        font-size: 18px;
         padding-top: 7%;
     }
     #modal_form .row {
         line-height: 30px;
     }
-    #modal_form input,
-    #modal_form select {
+    input,
+    select {
         width: 44%;
     }
     br.less-768 {
@@ -585,6 +602,12 @@
         width: 90%;
         height: 50px;
         line-height: 50px;
+    }
+    textarea {
+        width: 350px;
+    }
+    .hiddendiv {
+        width: 350px;
     }
     body {
         font-size: 14px;
@@ -963,11 +986,18 @@
     select, 
     textarea, 
     input { 
-        font-size: 16px !important; 
+        font-size: 16px !important;
+        line-height: 18px !important; 
     }
-    #modal_form .input-phone,
-    #modal_form select[name="amount"] {
+    .input-phone,
+    select[name="amount"] {
         width: 60%;
+    }
+    .message {
+        /*width: 97%;*/
+    }
+    textarea {
+        width: 250px;
     }
 }
 
@@ -999,6 +1029,12 @@
     }
     .contacts p {
         padding-left: 30%;
+    }
+    textarea {
+        width: 200px;
+    }
+    .hiddendiv {
+        width: 200px;
     }
 }
 
@@ -1071,6 +1107,10 @@
 
     #modal .row-custom {
         width: 100%;
+    }
+    #modal_form button[type="submit"] {
+        height: 30px;
+        line-height: 30px;
     }
     .bootstrap-datetimepicker-widget {
         width: 70%;
