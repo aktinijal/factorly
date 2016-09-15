@@ -593,8 +593,8 @@
     }
     button.request {
         width: 115px;
-        height: 50px;
-        line-height: 50px;
+        height: 40px;
+        line-height: 40px;
     }
     #modal_form {
         padding-top: 25px;
