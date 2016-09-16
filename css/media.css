@@ -279,16 +279,16 @@
     textarea {
         margin-bottom: -17px;
         width: 500px;
-        min-height: 40px;
-        height: 40px;
+        min-height: 45px;
+        height: 45px;
         font-size: 24px;
-        line-height: 40px;
+        line-height: 45px;
     }
     .hiddendiv {
         width: 500px;
-        min-height: 40px;
+        min-height: 45px;
         font-size: 24px;
-        line-height: 40px;
+        line-height: 45px;
     }
     .first-triangle {
         position: absolute;
