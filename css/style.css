@@ -128,8 +128,6 @@ body.modal-open, html.modal-open {
 }
 
 #modal_form .row {
-    display: inline;
-    vertical-align: top;
     margin-top: 40px;
     font-family: LarsseitMedium;
     font-size: 120%;
@@ -176,6 +174,9 @@ textarea {
     font-size: 44px;
     line-height: 84px;
     word-wrap: break-word;
+}
+.my-message {
+    vertical-align: top;
 }
 .dot {
     vertical-align: sub;
