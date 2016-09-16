@@ -38,6 +38,10 @@
         width: 175px;
         height: 75px;
     }
+    .input-append.date .add-on i, 
+    .input-prepend.date .add-on i {
+        height: 50px;
+    }
     textarea {
         min-height: 51px;
         height: 51px;
@@ -266,19 +270,25 @@
     }
     #modal_form .row {
         margin-top: 20px;
+        font-size: 115%;
+    }
+    .input-append.date .add-on i, 
+    .input-prepend.date .add-on i {
+        height: 47px;
     }
     textarea {
+        margin-bottom: -17px;
         width: 500px;
-        min-height: 45px;
-        height: 45px;
+        min-height: 40px;
+        height: 40px;
         font-size: 24px;
-        line-height: 45px;
+        line-height: 40px;
     }
     .hiddendiv {
         width: 500px;
-        min-height: 45px;
+        min-height: 40px;
         font-size: 24px;
-        line-height: 45px;
+        line-height: 40px;
     }
     .first-triangle {
         position: absolute;
@@ -353,7 +363,7 @@
         height: 33px;
     }
     textarea {
-        margin-bottom: -10px;
+        margin-bottom: -13px;
         width: 400px;
         min-height: 30px;
         height: 30px;
