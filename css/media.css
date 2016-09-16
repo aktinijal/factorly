@@ -340,6 +340,17 @@
     .slick-img-wrap {
         height: 624px;
     }
+    textarea {
+        min-height: 39px;
+        height: 39px;
+        font-size: 20px;
+        line-height: 39px;
+    }
+    .hiddendiv {
+        min-height: 39px;
+        font-size: 20px;
+        line-height: 39px;
+    }
 }
 
 
