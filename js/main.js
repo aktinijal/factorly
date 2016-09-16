@@ -149,7 +149,7 @@ $(document).ready(function () {
         txt.bind('keyup', function() {
 
             content = txt.val();
-            // content = content.replace(/\n/g, '<br>');
+            content = content.replace(/\n/g, '<br>');
             hiddenDiv.html(content);
 
             txt.css('height', hiddenDiv.height());
@@ -230,40 +230,11 @@ $(document).ready(function () {
         });
     });
 
-    //    $(document).ready(function () {
-    //        $(".cases-body").css("display", "none");
-    //        $(".cases-body").fadeIn(2000);
-    //
-    //        $("a.transition").click(function (event) {
-    //            event.preventDefault();
-    //            linkLocation = this.href;
-    //            $("body").fadeOut(1000, redirectPage);
-    //        });
-    //
-    //        function redirectPage() {
-    //            window.location = linkLocation;
-    //        }
-    //    });
-
-
     $(document).ready(function () {
-        //            $(".cases-body").css("display", "none");
-        //            $(".cases-body").fadeIn(2000);
         function getTop() {
             var scrollTop = $(".cases-body").scrollTop();
             return scrollTop;
         }
-
-        //        var scr = $("a.transition").click(function (event) {
-        //            event.preventDefault();
-        //            var scrollTop = getTop();
-        //            console.log(scrollTop);
-        //            linkLocation = this.href;
-        //            redirectPage();
-        //            scroll(scrollTop);
-        //            return scrollTop;
-        //        });
-        //        scroll(scr);
 
         function scroll(scrollTop) {
             $('body').scrollTop(scrollTop);
@@ -286,8 +257,6 @@ $(document).ready(function () {
         promise.then(function (scrollTop) {
             $('body').scrollTop(scrollTop);
         });
-
-
 
     });
 
@@ -313,28 +282,9 @@ $(document).ready(function () {
             opacity: '0'
         }, 300);
         $(this).find('.face > img').animate({
-            width: '100%',
-            //                left: -0
-
+            width: '100%'
         }, 100);
     });
-
-
-    // $('.zoom-photo').hover(function () {
-    //     $(this).find('img.photo').animate({
-    //         width: '105%',
-    //         left: '-5%'
-
-    //     }, 300);
-    // });
-    // $('.zoom-photo').mouseleave(function () {
-    //     $(this).find('img.photo').animate({
-    //         width: '100%',
-
-    //     }, 100);
-    // });
-
-
 
     $(function () {
         $('#datetimepicker1').datetimepicker({

@@ -160,17 +160,6 @@ textarea {
     border-bottom: 2px solid #fff;
     resize: none;
 }
-/*textarea {
-    width: 600px;
-    min-height: 36px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    font-size: 28px;
-    line-height: 32px;
-    padding: 0;
-    border-bottom: 2px solid #fff;
-    }*/
 .noscroll {
     overflow: hidden;
 }

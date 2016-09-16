@@ -1008,7 +1008,6 @@
         padding-left: 34%;
     }
     select, 
-    textarea, 
     input { 
         font-size: 16px !important;
         line-height: 18px !important; 
@@ -1020,14 +1019,14 @@
     textarea {
         width: 250px;
         min-height: 20px;
-        height: 20px;
-        /*font-size: 28px;*/
-        /*line-height: 51px;*/
+        height: 18px;
+        font-size: 16px;
+        line-height: 18px; 
     }
     .hiddendiv {
         min-height: 20px;
-        /*font-size: 28px;*/
-        /*line-height: 51px;*/
+        font-size: 16px;
+        line-height: 18px; 
     }
 }
 
