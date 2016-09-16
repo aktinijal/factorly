@@ -156,7 +156,22 @@ $(document).ready(function () {
             txt.css('height', hiddenDiv.height());
         });
     });
- 
+
+
+    var $htmlOrBody = $('html, body'), // scrollTop works on <body> for some browsers, <html> for others
+    scrollTopPadding = 8;
+
+    $('textarea').focus(function() {
+        // debugger;
+        var width = $(document).width();
+        if (width < 568) {
+            // get textarea's offset top position
+            var textareaTop = $(this).offset().top;
+            // scroll to the textarea
+            $htmlOrBody.scrollTop(textareaTop - scrollTopPadding);
+        }
+    });
+
     /********************Slick************************/
     var $status = $('.pagingInfo');
     var $slickElement = $('.cases-slick');
@@ -260,9 +275,6 @@ $(document).ready(function () {
         });
 
     });
-
-
-
 
 
     /***********************ABOUT.html******************/
