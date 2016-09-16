@@ -301,7 +301,8 @@ input ,textarea, select {
 
 #modal_form button[type="submit"],
 #modal_form input[type="submit"] {
-    position: absolute;
+    -webkit-backface-visibility: hidden;
+    position: fixed;
     bottom: 30px;
     right: 30px;
     display: block;
