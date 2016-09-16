@@ -69,8 +69,9 @@
 
 
 /*************************MODAL*************************/
-body.modal-open {
-    overflow: hidden;
+body.modal-open, html.modal-open {
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: auto;
 }
 .bootstrap-datetimepicker-widget {
     width: 550px;

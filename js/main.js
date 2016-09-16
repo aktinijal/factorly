@@ -89,7 +89,7 @@ $(document).ready(function () {
 
     /********************Modal***************************/
     $('.request').click(function () {
-        $('body').addClass('modal-open');
+        $('body, html').addClass('modal-open');
 
         $('#overlay')
             .css('display', 'block')
@@ -112,7 +112,8 @@ $(document).ready(function () {
     });
 
     $('#modal_close').click(function () {
-        $('body').removeClass('modal-open');
+        $('body, html').removeClass('modal-open');
+
         $('#modal_form')
             .removeClass('open')
             .animate({
