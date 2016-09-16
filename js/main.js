@@ -158,17 +158,20 @@ $(document).ready(function () {
     });
 
 
-    var $htmlOrBody = $('html, body'), // scrollTop works on <body> for some browsers, <html> for others
-    scrollTopPadding = 8;
-
     $('textarea').focus(function() {
         // debugger;
         var width = $(document).width();
         if (width < 568) {
-            // get textarea's offset top position
-            var textareaTop = $(this).offset().top;
-            // scroll to the textarea
-            $htmlOrBody.scrollTop(textareaTop - scrollTopPadding);
+            $('#modal_form').css('overflow', 'auto');
+            $('#modal_form button').css('visibility', 'hidden');
+        }
+    });
+    $('textarea').blur(function() {
+        // debugger;
+        var width = $(document).width();
+        if (width < 568) {
+            $('#modal_form').css('overflow', 'auto');
+            $('#modal_form button').css('visibility', 'visible');
         }
     });
 
